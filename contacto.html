@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ficus cerámica: Contáctanos para conocer primero nuestros nuevos productos, estar al tanto de los talleres que dictamos, ferias y mucho más.">
+    <meta name="keyword" content="ceramica artesanal, disenos unicos, vasijas, mates, ceramica">
+    <title>Contáctanos. Ficus Cerámica</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ficusgrid.css">
+</head>
+
+<body>
+    <div id="grillaContacto">
+        <header class="cabecera">
+            <img src="css/logoFicus.jpg" alt="logo2" class="cabecera__logo">
+            <h1 class="cabecera__titulo">CONTACTO</h1>
+        </header>
+
+        <nav>
+            <ul class="menu">
+                <li class="menu__li">
+                    <a class="linkNavegacion" href="index.html">Inicio</a>
+                </li>
+                <li class="menu__li">
+                    <a class="linkNavegacion" href="sobreficus.html">Sobre Ficus</a>
+                    <ul>
+                        <li class="subLi"><a class="linkNavegacion" href="sobreficus.html#quienes_somos">Quienes
+                                somos</a>
+                        </li>
+                        <li class="subLi"><a class="linkNavegacion" href="sobreficus.html#concepto">Concepto</a>
+                        </li>
+                        <li class="subLi"><a class="linkNavegacion" href="sobreficus.html#amigos">Amigos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__li">
+                    <a class="linkNavegacion" href="talleres.html"> Talleres</a>
+                    <ul>
+                        <li class="subLi"><a class="linkNavegacion" href="talleres.html#personales">Personales</a>
+                        </li>
+                        <li class="subLi"><a class="linkNavegacion" href="talleres.html#grupales">Grupales</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__li--activo">
+                    <a class="linkNavegacion" href="contacto.html">Contacto</a>
+                </li>
+                <li class="menu__li">
+                    <a class="linkNavegacion" href="productos.html">Productos</a>
+                    <ul>
+                        <li class="subLi"><a class="linkNavegacion" href="productos.html#vajilla">Vajilla</a>
+                        </li>
+                        <li class="subLi"><a class="linkNavegacion" href="productos.html#decoracion_otros">Decoración y otros</a>
+                        </li>
+                        <li class="subLi"><a class="linkNavegacion" href="productos.html#tabla_precios">Tabla de
+                                precios</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main id="mainContacto">
+            <form id="formularioContacto" action="#" method="GET">
+                <div class="form-group">
+                    <fieldset>
+                        <legend id="tituloFormulario">FORMULARIO DE CONTACTO</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="Nombre" id="nombre" required class="form-control">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" placeholder="Apellido" id="apellido" required
+                            class="form-control">
+                        <label for="celular">Celular</label>
+                        <input type="tel" placeholder="Celular" name="celular" id="celular" required
+                            class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Ingrese su email" name="email" id="email" required
+                            class="form-control">
+                        <fieldset>¿Tiene conocimientos de cerámica?
+                            <select>
+                                <option value="si">Si</option>
+                                <option value="no">No</option>
+                            </select>
+                        </fieldset>
+                        <label for="comentario">Comentarios</label>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10"
+                            placeholder="Escriba aquí su comentario"></textarea>
+                    </fieldset>
+                    <input type="checkbox" name="novedades" class="form-check-input"> ¿Desea suscribirse al newsletter?
+                    <input type="submit" value="Enviar" class="btn btn-light">
+                    <input type="reset" value="Resetear" class="btn btn-secondary">
+                </div>
+            </form>
+
+        </main>
+        <footer class="footer">
+            <ul class="footer__ul">
+                <li>
+                    <a class="footerLinks" href="https://www.instagram.com/ficusceramica/" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a class="footerLinks" href="https://api.whatsapp.com/send/?phone=5493516198161&text&app_absent=0/"
+                        target="_blank">Whatsapp</a>
+                </li>
+                <li>
+                    <a class="footerLinks"
+                        href="https://www.google.com.ar/maps/@-31.3661163,-64.2351727,21z?hl=es-419&authuser=0"
+                        target="blank">Ubicación</a>
+                </li>
+            </ul>
+
+            <h3 class="footer__amor--modifier">Diseños hechos con amor</h3>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,570 @@
+@import url(tamanios.scss);
+body {
+  margin: 0;
+  padding: 0; }
+
+/*----------------ENCABEZADO-------------------*/
+.cabecera {
+  margin: 0;
+  padding: 1.25em;
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(90deg, #3c456d 0%, #dfb4b4 0%, #60c489 100%); }
+  @media (max-width: 499px) and (min-width: 200px) {
+    .cabecera {
+      display: flex;
+      flex-direction: column;
+      font-size: 10px; } }
+  header .cabecera__logo {
+    max-width: 40%;
+    height: auto;
+    display: flex;
+    border-radius: 50%; }
+  header .cabecera__titulo {
+    margin-left: 0.625em;
+    color: #e5d1d0;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 3.125em; }
+  .cabecera__titulo:hover {
+    font-size: 3.75rem;
+    transition: 2s; }
+    @media (max-width: 499px) and (min-width: 200px) {
+      .cabecera__titulo:hover {
+        font-size: 3em; } }
+
+/*-----------BARRA DE NAVEGACION--------------*/
+nav {
+  grid-area: nav;
+  list-style: none;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  background-color: #e5d1d0;
+  font-family: "Montserrat", Sans-serif; }
+  @media (max-width: 499px) and (min-width: 200px) {
+    nav {
+      justify-content: center; } }
+  nav .menu {
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center; }
+    @media (max-width: 499px) and (min-width: 200px) {
+      nav .menu {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center; } }
+    nav .menu__li {
+      display: flex;
+      position: relative;
+      font-size: 0.9375em;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0.1875em;
+      margin-right: 1.875em; }
+      nav .menu__li--activo {
+        color: #2d6a4f;
+        font-weight: bold;
+        font-size: 1em;
+        margin-right: 1em;
+        display: inline; }
+        nav .menu__li--activo ul {
+          list-style: none;
+          padding: 0; }
+      nav .menu__li--activo:hover ul {
+        margin: 5px;
+        padding: 0; }
+      nav .menu__li ul {
+        position: absolute;
+        display: none; }
+        nav .menu__li ul li.subli {
+          display: block;
+          cursor: pointer;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          font-size: .5em;
+          overflow: auto; }
+    nav .menu__li:hover {
+      text-shadow: #60c489; }
+  nav li:hover ul {
+    display: block;
+    margin-top: 1.25rem;
+    padding-top: 100%;
+    padding-left: 100%;
+    list-style: none; }
+  nav .linkNavegacion {
+    text-decoration: none;
+    color: #368f8b; }
+
+/*-------------FOOTER--------------------*/
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #60c489;
+  font-family: "Montserrat", Sans-serif;
+  color: #445b6c; }
+  .footer__ul {
+    padding: .5em;
+    text-decoration: none;
+    list-style: none; }
+    .footer__ul li .footerLinks {
+      text-decoration: none;
+      color: #e5d1d0; }
+  .footer__amor {
+    color: #445b6c;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 0.9375rem;
+    margin-left: 15px; }
+    @media (max-width: 499px) and (min-width: 300px) {
+      .footer__amor {
+        font-size: 13px; } }
+  .footer__amor--modifier:hover {
+    color: #368f8b;
+    font-weight: bolder;
+    font-style: oblique; }
+    @media (max-width: 499px) and (min-width: 300px) {
+      .footer__amor--modifier:hover {
+        font-size: 15px; } }
+  @media (max-width: 499px) and (min-width: 300px) {
+    .footer {
+      font-size: 10px; } }
+
+/*-------------INDEX---------------*/
+#grillaIndex {
+  display: grid;
+  height: 2500px;
+  width: 100vw;
+  grid-template-rows: 15% 10% 7% 60% 8%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "header header" "nav nav" "hola hola" "main aside" "footer footer"; }
+  @media (max-width: 800px) and (min-width: 500px) {
+    #grillaIndex {
+      display: grid;
+      height: auto;
+      width: 100vw;
+      overflow: auto;
+      grid-template-columns: 100vw;
+      grid-template-rows: 15% 10% 10% 25% 35% 5%;
+      grid-template-areas: "header" "nav" "hola" "main" "aside" "footer"; } }
+  @media (max-width: 499px) and (min-width: 200px) {
+    #grillaIndex {
+      display: grid;
+      height: auto;
+      width: 100vw;
+      overflow: auto;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 10% 15% 10% 25% 35% 5%;
+      grid-template-areas: "header header" "nav nav" "hola hola" "main main" "aside aside" "footer footer";
+      /*.cabecera {
+			margin: 0;
+			padding: 1.25em;
+			grid-area: header;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background: linear-gradient(90deg, rgba(60, 69, 109, 1) 0%, rgba(223, 180, 180, 1) 0%, rgba(96, 196, 137, 1) 100%);
+
+
+			header &__logo {
+				max-width: 40%;
+				height: auto;
+				display: flex;
+				border-radius: 50%;
+			}
+
+			header &__titulo {
+				margin-left: 0.2em;
+				color: rgb(229, 209, 208);
+				font-family: "Montserrat", Sans-serif;
+				font-size: 1.125rem;
+				text-align: center;
+
+			}
+
+			&__titulo:hover {
+				font-size: 2.75rem;
+				transition: 2s;
+			}
+
+		}*/ }
+      #grillaIndex nav {
+        grid-area: nav;
+        list-style: none;
+        font-size: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e5d1d0;
+        font-family: "Montserrat", Sans-serif; }
+        #grillaIndex nav .menu {
+          list-style: none;
+          font-size: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
+  #grillaIndex .hola {
+    grid-area: hola;
+    background-color: #edafb8;
+    color: #0b3948;
+    font-family: "Montserrat", Sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    padding: 2em;
+    margin-top: 2.5rem; }
+    @media (max-width: 499px) and (min-width: 300px) {
+      #grillaIndex .hola {
+        font-size: 10px; } }
+    #grillaIndex .hola__titulo {
+      font-family: "Montserrat", Sans-serif;
+      font-size: 1.5625em;
+      font-weight: bolder; }
+    #grillaIndex .hola__p {
+      font-size: 1rem;
+      color: #368f8b; }
+  #grillaIndex main {
+    grid-area: main;
+    padding: 1em;
+    background-color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    max-height: 100%; }
+    @media (max-width: 499px) and (min-width: 300px) {
+      #grillaIndex main {
+        font-size: 10px; } }
+    #grillaIndex main h2 {
+      font-size: 3em;
+      color: #368f8b;
+      font-weight: bold;
+      padding: .5em; }
+    #grillaIndex main h4 {
+      font-weight: lighter;
+      color: #368f8b;
+      font-family: "Montserrat", Sans-serif; }
+    #grillaIndex main a {
+      text-decoration: none;
+      color: #0b3948;
+      padding: 1em; }
+    #grillaIndex main a:hover {
+      color: #edafb8; }
+  #grillaIndex p {
+    font-size: 1em;
+    color: #445b6c;
+    padding: .5em;
+    text-align: justify; }
+  #grillaIndex aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 200px; }
+    @media (max-width: 499px) and (min-width: 300px) {
+      #grillaIndex aside {
+        font-size: 10px;
+        margin: 1em; } }
+    #grillaIndex aside #carouselExampleControls {
+      margin: 40px;
+      padding-top: 3em; }
+    #grillaIndex aside p {
+      padding: 1em;
+      font-family: "Montserrat", Sans-serif;
+      font-style: italic;
+      background-color: #edafb8;
+      color: #445b6c;
+      text-align: justify;
+      max-width: 85%; }
+
+/*--------------SOBRE FICUS-------------------*/
+#grillaSobreFicus {
+  display: grid;
+  height: 2500px;
+  width: 100vw;
+  grid-template-rows: 15% 10% 67% 8%;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "nav" "main" "footer"; }
+  @media (max-width: 800px) and (min-width: 500px) {
+    #grillaSobreFicus {
+      display: grid;
+      height: auto;
+      width: 100vw;
+      overflow: auto;
+      grid-template-columns: 100vw;
+      grid-template-rows: 15% 10% 70% 5%;
+      grid-template-areas: "header" "nav" "main" "footer"; } }
+  @media (max-width: 499px) and (min-width: 200px) {
+    #grillaSobreFicus {
+      display: grid;
+      height: auto;
+      width: 100vw;
+      overflow: auto;
+      grid-template-columns: 100vw;
+      grid-template-rows: 15% 10% 70% 5%;
+      grid-template-areas: "header" "nav" "main" "footer"; } }
+  #grillaSobreFicus main {
+    grid-area: main;
+    padding: 1em;
+    background-color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
+    color: #445b6c;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    height: auto;
+    padding: 5em;
+    overflow: auto; }
+    @media (max-width: 499px) and (min-width: 200px) {
+      #grillaSobreFicus main {
+        font-size: 10px;
+        padding: .5em; } }
+    #grillaSobreFicus main img {
+      max-width: 90%;
+      margin-left: 3.125rem; }
+      @media (max-width: 499px) and (min-width: 200px) {
+        #grillaSobreFicus main img {
+          margin: .8em; } }
+    #grillaSobreFicus main h2 {
+      font-size: 3em;
+      color: #368f8b;
+      font-weight: bold;
+      padding: .5em; }
+    #grillaSobreFicus main h3 {
+      font-size: 3em;
+      color: #368f8b;
+      font-weight: bold;
+      padding: .5em; }
+    #grillaSobreFicus main p {
+      font-size: 1em;
+      color: #445b6c;
+      padding: .5em;
+      text-align: justify; }
+    #grillaSobreFicus main div div .amigos {
+      display: flex;
+      flex-direction: column;
+      margin: 1em;
+      text-decoration: none;
+      padding: 1em;
+      overflow: auto; }
+      h2 #grillaSobreFicus main div div .amigos__titulo {
+        color: #368f8b;
+        padding-bottom: 0; }
+      #grillaSobreFicus main div div .amigos__ul {
+        margin: 2em;
+        padding-bottom: 1em;
+        list-style: none;
+        text-decoration: none;
+        color: #368f8b;
+        font-weight: bold; }
+        #grillaSobreFicus main div div .amigos__ul li a {
+          text-decoration: none;
+          color: #368f8b; }
+    #grillaSobreFicus main div .cardsAmigos {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+      margin: 1 em;
+      height: 40vh; }
+      @media (max-width: 499px) and (min-width: 200px) {
+        #grillaSobreFicus main div .cardsAmigos {
+          display: flex;
+          flex-direction: column;
+          height: 50%;
+          justify-items: center; } }
+      #grillaSobreFicus main div .cardsAmigos div {
+        width: 40%;
+        height: 80%;
+        background-color: #dfb4b4;
+        padding: 1em;
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8%; }
+        @media (max-width: 499px) and (min-width: 200px) {
+          #grillaSobreFicus main div .cardsAmigos div {
+            margin-left: 6.5em; } }
+        #grillaSobreFicus main div .cardsAmigos div a {
+          margin: 0;
+          padding: 0;
+          font-size: 0; }
+          #grillaSobreFicus main div .cardsAmigos div a img {
+            width: 7.5rem;
+            height: 7.5rem;
+            margin: 1em;
+            border-radius: 50%;
+            transition: height 1s width 1s; }
+            #grillaSobreFicus main div .cardsAmigos div a img:hover {
+              height: 8.125rem;
+              width: 8.125rem;
+              box-shadow: 5px; }
+
+/*-------------- TALLERES----------------*/
+#grillaTalleres {
+  display: grid;
+  height: 2000px;
+  width: 100vw;
+  grid-template-rows: 15% 10% 67% 8%;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "nav" "main" "footer"; }
+  @media (max-width: 499px) and (min-width: 200px) {
+    #grillaTalleres {
+      height: auto;
+      font-size: 10px; } }
+  #grillaTalleres #mainTalleres {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "personales grupales";
+    align-items: flex-start;
+    justify-items: center;
+    padding: 1em;
+    background-color: #ffffff;
+    font-family: "Montserrat", Sans-serif; }
+    @media (max-width: 499px) and (min-width: 200px) {
+      #grillaTalleres #mainTalleres {
+        display: flex;
+        flex-direction: column; } }
+  #grillaTalleres h2 {
+    font-size: 3em;
+    color: #368f8b;
+    font-weight: bold;
+    padding: .5em; }
+  #grillaTalleres h3 {
+    font-size: 3em;
+    color: #368f8b;
+    font-weight: bold;
+    padding: .5em; }
+  #grillaTalleres p {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1em;
+    color: #445b6c;
+    padding: .5em;
+    text-align: justify;
+    max-width: 80vw; }
+  #grillaTalleres #tPersonales {
+    grid-area: personales;
+    background-color: #f3d0ce;
+    font-weight: bold;
+    font-style: italic;
+    margin: 1em;
+    padding: 1em;
+    padding-bottom: 2em; }
+  #grillaTalleres #tGrupales {
+    grid-area: grupales;
+    background-color: #e7bdbb;
+    font-weight: bold;
+    font-style: italic;
+    margin: 1em;
+    padding: 1em;
+    padding-bottom: 2em; }
+
+/*------------CONTACTO-----------------*/
+#grillaContacto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 10% 67% 8%;
+  height: 2000px;
+  width: 100vw;
+  grid-template-areas: "header" "nav" "main" "footer"; }
+  @media (max-width: 499px) and (min-width: 200px) {
+    #grillaContacto {
+      font-size: 10px;
+      height: auto; } }
+  #grillaContacto #mainContacto {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: "Montserrat", Sans-serif; }
+    #grillaContacto #mainContacto form {
+      color: #368f8b;
+      background-color: #f3d0ce;
+      padding: 1.25rem;
+      border-radius: 8%; }
+      @media (max-width: 499px) and (min-width: 200px) {
+        #grillaContacto #mainContacto form {
+          font-size: 10px;
+          margin: 3em; }
+          #grillaContacto #mainContacto form #formularioContacto div .form-group {
+            font-size: 1em;
+            margin: .5em; } }
+
+/*------------PRODUCTOS-----------------*/
+#grillaProductos {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 10% 67% 8%;
+  grid-template-areas: "header" "nav" "main" "footer"; }
+  #grillaProductos main {
+    grid-area: main;
+    background-color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
+    overflow: auto; }
+    @media (max-width: 499px) and (min-width: 200px) {
+      #grillaProductos main {
+        font-size: 10px; } }
+    #grillaProductos main h2 {
+      font-size: 3em;
+      color: #368f8b;
+      font-weight: bold;
+      padding: .5em; }
+    #grillaProductos main h3 {
+      font-size: 3em;
+      color: #368f8b;
+      font-weight: bold;
+      padding: .5em; }
+    #grillaProductos main .conteiner-fluid {
+      max-width: 100vw;
+      margin: 1em;
+      padding: 1em;
+      align-content: center; }
+      #grillaProductos main .conteiner-fluid div .row div .col-12 col-md-6 col-sm-4 {
+        padding: 1em; }
+        @media (max-width: 499px) and (min-width: 200px) {
+          #grillaProductos main .conteiner-fluid div .row div .col-12 col-md-6 col-sm-4 img {
+            max-width: 80%; } }
+      #grillaProductos main .conteiner-fluid img {
+        max-height: 80%;
+        padding: 1em; }
+    #grillaProductos main section p {
+      font-family: "Montserrat", Sans-serif;
+      font-size: 1em;
+      color: #445b6c;
+      padding: 2em;
+      text-align: justify;
+      max-width: 80vw; }
+    #grillaProductos main div #sectionTabla {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      padding-top: 1em;
+      padding-bottom: 2em;
+      padding-left: 3em;
+      color: #445b6c;
+      margin-bottom: 3em;
+      max-width: 80vw; }
