@@ -65,8 +65,10 @@ nav {
 	align-items: center;
 	background-color: rgb(229, 209, 208);
 	font-family: "Montserrat", Sans-serif;
+
 	@media (max-width:499px) and (min-width:200px) {
-		justify-content: center;}
+		justify-content: center;
+	}
 
 	.menu {
 		list-style: none;
@@ -216,65 +218,6 @@ nav {
 		"footer footer";
 
 
-	@media (max-width:800px) and (min-width:500px) {
-
-		display: grid;
-		height: auto;
-		width: 100vw;
-		overflow: auto;
-		grid-template-columns: 100vw;
-		grid-template-rows: 15% 10% 10% 25% 35% 5%;
-		grid-template-areas:
-			"header"
-			"nav"
-			"hola"
-			"main"
-			"aside"
-			"footer";
-	}
-
-	@media (max-width:499px) and (min-width:200px) {
-
-		display: grid;
-		height: auto;
-		width: 100vw;
-		overflow: auto;
-		grid-template-columns: 30% 70%;
-		grid-template-rows: 10% 15% 10% 25% 35% 5%;
-		grid-template-areas:
-			"header header"
-			"nav nav"
-			"hola hola"
-			"main main"
-			"aside aside"
-			"footer footer";
-
-		nav {
-			grid-area: nav;
-			list-style: none;
-			font-size: 0;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background-color: rgb(229, 209, 208);
-			font-family: "Montserrat", Sans-serif;
-
-			.menu {
-				list-style: none;
-				font-size: 1rem;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-
-			}
-
-
-		}
-
-
-
-	}
-
 	.hola {
 		grid-area: hola;
 		background-color: rgb(237, 175, 184);
@@ -288,9 +231,7 @@ nav {
 		padding: 2em;
 		margin-top: 2.5rem;
 
-		@media (max-width:499px) and (min-width:300px) {
-			font-size: 10px;
-		}
+
 
 
 		&__titulo {
@@ -318,9 +259,7 @@ nav {
 		max-width: 100%;
 		max-height: 100%;
 
-		@media (max-width:499px) and (min-width:300px) {
-			font-size: 10px;
-		}
+
 
 		h2 {
 			font-size: 3em;
@@ -366,10 +305,7 @@ nav {
 		padding: 10px;
 		margin-top: 200px;
 
-		@media (max-width:499px) and (min-width:300px) {
-			font-size: 10px;
-			margin: 1em;
-		}
+
 
 		#carouselExampleControls {
 			margin: 40px;
@@ -402,35 +338,6 @@ nav {
 		"main"
 		"footer";
 
-	@media (max-width:800px) and (min-width:500px) {
-
-		display: grid;
-		height: auto;
-		width: 100vw;
-		overflow: auto;
-		grid-template-columns: 100vw;
-		grid-template-rows: 15% 10% 70% 5%;
-		grid-template-areas:
-			"header"
-			"nav"
-			"main"
-			"footer";
-	}
-
-	@media (max-width:499px) and (min-width:200px) {
-		display: grid;
-		height: auto;
-		width: 100vw;
-		overflow: auto;
-		grid-template-columns: 100vw;
-		grid-template-rows: 15% 10% 70% 5%;
-		grid-template-areas:
-			"header"
-			"nav"
-			"main"
-			"footer";
-	}
-
 	main {
 		grid-area: main;
 		padding: 1em;
@@ -446,6 +353,7 @@ nav {
 		height: auto;
 		padding: 5em;
 		overflow: auto;
+
 		@media (max-width:499px) and (min-width:200px) {
 			font-size: 10px;
 			padding: .5em;
@@ -454,6 +362,7 @@ nav {
 		img {
 			max-width: 90%;
 			margin-left: 3.125rem;
+
 			@media (max-width:499px) and (min-width:200px) {
 				margin: .8em;
 			}
@@ -466,7 +375,7 @@ nav {
 			padding: .5em;
 		}
 
-		h3{
+		h3 {
 			font-size: 3em;
 			color: $colorTitulos;
 			font-weight: bold;
@@ -497,7 +406,7 @@ nav {
 			h2 &__titulo {
 				color: $colorTitulos;
 				padding-bottom: 0;
-				
+
 			}
 
 			&__ul {
@@ -525,12 +434,14 @@ nav {
 			justify-items: center;
 			margin: 1 em;
 			height: 40vh;
+
 			@media (max-width:499px) and (min-width:200px) {
 				display: flex;
 				flex-direction: column;
 				height: 50%;
 				justify-items: center;
 			}
+
 			div {
 				width: 40%;
 				height: 80%;
@@ -542,11 +453,12 @@ nav {
 				align-items: center;
 				justify-content: center;
 				border-radius: 8%;
+
 				@media (max-width:499px) and (min-width:200px) {
-				margin-left: 6.5em;
+					margin-left: 6.5em;
 				}
-	
-				
+
+
 				a {
 					margin: 0;
 					padding: 0;
@@ -600,10 +512,11 @@ nav {
 		"nav"
 		"main"
 		"footer";
-		@media (max-width:499px) and (min-width:200px) {
-			height: auto;
-			font-size: 10px;
-		}
+
+	@media (max-width:499px) and (min-width:200px) {
+		height: auto;
+		font-size: 10px;
+	}
 
 
 	#mainTalleres {
@@ -619,8 +532,8 @@ nav {
 		font-family: "Montserrat", Sans-serif;
 
 		@media (max-width:499px) and (min-width:200px) {
-		display: flex;
-		flex-direction: column;
+			display: flex;
+			flex-direction: column;
 		}
 
 	}
@@ -633,7 +546,7 @@ nav {
 
 	}
 
-	h3{
+	h3 {
 		font-size: 3em;
 		color: $colorTitulos;
 		font-weight: bold;
@@ -675,10 +588,6 @@ nav {
 		"nav"
 		"main"
 		"footer";
-		@media (max-width:499px) and (min-width:200px) {
-			font-size: 10px;
-			height: auto;
-		}
 
 	#mainContacto {
 		grid-area: main;
@@ -694,19 +603,20 @@ nav {
 			background-color: rgb(243, 208, 206);
 			padding: 1.25rem;
 			border-radius: round($number: 8%);
+
 			@media (max-width:499px) and (min-width:200px) {
 				font-size: 10px;
 				margin: 3em;
 
-				#formularioContacto div .form-group{
+				#formularioContacto div .form-group {
 					font-size: 1em;
 					margin: .5em;
 
-				
-					
+
+
 				}
 			}
-			
+
 		}
 	}
 }
@@ -727,7 +637,7 @@ nav {
 		background-color: $colorFondo;
 		font-family: "Montserrat", Sans-serif;
 		overflow: auto;
-	
+
 		@media (max-width:499px) and (min-width:200px) {
 			font-size: 10px;
 		}
@@ -739,7 +649,7 @@ nav {
 			padding: .5em;
 		}
 
-		h3{
+		h3 {
 			font-size: 3em;
 			color: $colorTitulos;
 			font-weight: bold;
@@ -757,8 +667,9 @@ nav {
 
 				div .col-12 col-md-6 col-sm-4 {
 					padding: 1em;
+
 					@media (max-width:499px) and (min-width:200px) {
-						img{
+						img {
 							max-width: 80%;
 						}
 					}
@@ -797,4 +708,275 @@ nav {
 	}
 
 }
+
 @import url(tamanios.scss);
+
+//-----------MEDIA QUERY INDEX------------------//
+#grillaIndex {
+	@media (max-width:800px) and (min-width:500px) {
+
+		display: grid;
+		height: auto;
+		width: 100vw;
+		overflow: auto;
+		grid-template-columns: 100vw;
+		grid-template-rows: 8% 5% 5% 50% 47% 5%;
+		grid-template-areas:
+			"header"
+			"nav"
+			"hola"
+			"main"
+			"aside"
+			"footer";
+		
+		.cabecera{
+			font-size: 16px;
+		}
+		.asideIndex {
+			margin-top: 1em;
+		}
+		@media (max-width:499px) and (min-width:300px) {
+			font-size: 10px;
+			margin: 1em;
+		}
+
+		
+		
+
+		}
+
+		@media (max-width:499px) and (min-width:200px) {
+
+			display: grid;
+			height: auto;
+			width: 100vw;
+			overflow: auto;
+			grid-template-columns: 30% 70%;
+			grid-template-rows: 7% 8% 5% 38% 37% 5%;
+			grid-template-areas:
+				"header header"
+				"nav nav"
+				"hola hola"
+				"main main"
+				"aside aside"
+				"footer footer";
+			
+			.cabecera{
+				.cabecera__logo{
+					max-height: 70%;
+				}
+				.cabecera__titulo{
+					font-size: 3em;
+				}
+			}
+
+
+			nav {
+				grid-area: nav;
+				list-style: none;
+				font-size: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: rgb(229, 209, 208);
+				font-family: "Montserrat", Sans-serif;
+
+				.menu {
+					list-style: none;
+					font-size: 1rem;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+				}
+			}
+			.hola{
+				padding:0;
+			#hola__titulo{
+				font-size: 1em;
+				padding:10px 0px 0px 0px;
+				margin: 0;
+			}
+			.hola__p{
+				font-size: .9em;
+				padding: 0;
+			}
+		}
+			main{
+			font-size: 10px;
+			}
+		}
+
+
+
+	}
+	//*---------------MEDIAQ SOBREFICUS---------------------*//
+	#grillaSobreFicus{
+	@media (max-width:800px) and (min-width:500px) {
+
+		display: grid;
+		height: auto;
+		width: 100vw;
+		overflow: auto;
+		grid-template-columns: 100vw;
+		grid-template-rows: 8% 5% 82% 5%;
+		grid-template-areas:
+			"header"
+			"nav"
+			"main"
+			"footer";
+	}
+
+	@media (max-width:499px) and (min-width:200px) {
+		display: grid;
+		height: auto;
+		width: 100vw;
+		overflow: auto;
+		grid-template-columns: 100vw;
+		grid-template-rows: 7% 8% 80% 5%;
+		grid-template-areas:
+			"header"
+			"nav"
+			"main"
+			"footer";
+
+		.cabecera{
+				.cabecera__logo{
+					max-height: 70%;
+				}
+				.cabecera__titulo{
+					font-size: 3em;
+					margin: .3em;
+				}
+		}
+}
+}
+//-----------------MEDIAQ TALLERES---------------------------//
+#grillaTalleres{
+	@media (max-width:800px) and (min-width:500px) {
+
+		display: grid;
+		height: auto;
+		width: 100vw;
+		overflow: auto;
+		grid-template-columns: 100vw;
+		grid-template-rows: 8% 5% 82% 5%;
+		grid-template-areas:
+			"header"
+			"nav"
+			"main"
+			"footer";
+	}
+
+	@media (max-width:499px) and (min-width:200px) {
+		display: grid;
+		height: auto;
+		width: 100vw;
+		overflow: auto;
+		grid-template-columns: 100vw;
+		grid-template-rows: 7% 8% 80% 5%;
+		grid-template-areas:
+			"header"
+			"nav"
+			"main"
+			"footer";
+
+		.cabecera{
+				.cabecera__logo{
+					max-height: 70%;
+				}
+				.cabecera__titulo{
+					font-size: 3em;
+					margin: .3em;
+				}
+		}
+}
+}
+//-------------------MEDIAQ CONTACTO----------------------------//
+#grillaContacto{
+@media (max-width:800px) and (min-width:500px) {
+
+	display: grid;
+	height: auto;
+	width: 100vw;
+	overflow: auto;
+	grid-template-columns: 100vw;
+	grid-template-rows: 8% 5% 82% 5%;
+	grid-template-areas:
+		"header"
+		"nav"
+		"main"
+		"footer";
+}
+
+@media (max-width:499px) and (min-width:200px) {
+	display: grid;
+	height:auto;
+	width: 100vw;
+	overflow: auto;
+	grid-template-columns: 100vw;
+	grid-template-rows: 13% 15% 59% 13%;
+	grid-template-areas:
+		"header"
+		"nav"
+		"main"
+		"footer";
+		
+	font-size: 10px;
+			
+
+	.cabecera{
+			.cabecera__logo{
+				max-height: 70%;
+			}
+			.cabecera__titulo{
+				font-size: 3em;
+				margin: .3em;
+			}
+	}
+}
+}
+
+//-------------MEDIAQ PRODUCTOS---------------------------//
+#grillaProductos{
+		@media (max-width:800px) and (min-width:500px) {
+	
+			display: grid;
+			height: auto;
+			width: 100vw;
+			overflow: auto;
+			grid-template-columns: 100vw;
+			grid-template-rows: 8% 5% 82% 5%;
+			grid-template-areas:
+				"header"
+				"nav"
+				"main"
+				"footer";
+		}
+	
+		@media (max-width:499px) and (min-width:200px) {
+			display: grid;
+			height: auto;
+			width: 100vw;
+			overflow: auto;
+			grid-template-columns: 100vw;
+			grid-template-rows: 7% 8% 80% 5%;
+			grid-template-areas:
+				"header"
+				"nav"
+				"main"
+				"footer";
+	
+			.cabecera{
+					.cabecera__logo{
+						max-height: 70%;
+					}
+					.cabecera__titulo{
+						font-size: 3em;
+						margin: .3em;
+					}
+			}
+	}
+	
+
+}
