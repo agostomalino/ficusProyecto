@@ -208,7 +208,7 @@ nav {
 	display: grid;
 	height: 2500px;
 	width: 100vw;
-	grid-template-rows: 15% 10% 7% 60% 8%;
+	grid-template-rows: 10% 3% 10% 65% 8%;
 	grid-template-columns: 50% 50%;
 	grid-template-areas:
 		"header header"
@@ -505,7 +505,7 @@ nav {
 	display: grid;
 	height: 2000px;
 	width: 100vw;
-	grid-template-rows: 15% 10% 67% 8%;
+	grid-template-rows: 10% 10% 72% 8%;
 	grid-template-columns: 100%;
 	grid-template-areas:
 		"header"
@@ -976,7 +976,5 @@ nav {
 						margin: .3em;
 					}
 			}
-	}
-	
-
+	} 
 }
