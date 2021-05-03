@@ -116,7 +116,7 @@ nav {
     list-style: none; }
     .footer__ul li .footerLinks {
       text-decoration: none;
-      color: #e5d1d0; }
+      color: #ffffff; }
   .footer__amor {
     color: #445b6c;
     font-family: "Montserrat", Sans-serif;
@@ -141,7 +141,7 @@ nav {
   display: grid;
   height: 2500px;
   width: 100vw;
-  grid-template-rows: 10% 3% 10% 65% 8%;
+  grid-template-rows: 10% 3% 10% 72% 5%;
   grid-template-columns: 50% 50%;
   grid-template-areas: "header header" "nav nav" "hola hola" "main aside" "footer footer"; }
   #grillaIndex .hola {
@@ -221,7 +221,7 @@ nav {
   display: grid;
   height: 2500px;
   width: 100vw;
-  grid-template-rows: 15% 10% 67% 8%;
+  grid-template-rows: 10% 3% 82% 5%;
   grid-template-columns: 100%;
   grid-template-areas: "header" "nav" "main" "footer"; }
   #grillaSobreFicus main {
@@ -331,7 +331,7 @@ nav {
   display: grid;
   height: 2000px;
   width: 100vw;
-  grid-template-rows: 10% 10% 72% 8%;
+  grid-template-rows: 10% 3% 82% 5%;
   grid-template-columns: 100%;
   grid-template-areas: "header" "nav" "main" "footer"; }
   @media (max-width: 499px) and (min-width: 200px) {
@@ -390,7 +390,7 @@ nav {
 #grillaContacto {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 15% 10% 67% 8%;
+  grid-template-rows: 10% 3% 82% 5%;
   height: 2000px;
   width: 100vw;
   grid-template-areas: "header" "nav" "main" "footer"; }
@@ -420,7 +420,7 @@ nav {
   display: grid;
   width: 100vw;
   grid-template-columns: 100%;
-  grid-template-rows: 15% 10% 67% 8%;
+  grid-template-rows: 10% 3% 82% 5%;
   grid-template-areas: "header" "nav" "main" "footer"; }
   #grillaProductos main {
     grid-area: main;

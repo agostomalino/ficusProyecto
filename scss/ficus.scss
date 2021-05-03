@@ -170,7 +170,7 @@ nav {
 
 		li .footerLinks {
 			text-decoration: none;
-			color: rgb(229, 209, 208);
+			color:$colorFondo;
 		}
 	}
 
@@ -208,7 +208,7 @@ nav {
 	display: grid;
 	height: 2500px;
 	width: 100vw;
-	grid-template-rows: 10% 3% 10% 65% 8%;
+	grid-template-rows: 10% 3% 10% 72% 5%;
 	grid-template-columns: 50% 50%;
 	grid-template-areas:
 		"header header"
@@ -330,7 +330,7 @@ nav {
 	display: grid;
 	height: 2500px;
 	width: 100vw;
-	grid-template-rows: 15% 10% 67% 8%;
+	grid-template-rows:  10% 3% 82% 5%;
 	grid-template-columns: 100%;
 	grid-template-areas:
 		"header"
@@ -505,7 +505,7 @@ nav {
 	display: grid;
 	height: 2000px;
 	width: 100vw;
-	grid-template-rows: 10% 10% 72% 8%;
+	grid-template-rows: 10% 3% 82% 5%;
 	grid-template-columns: 100%;
 	grid-template-areas:
 		"header"
@@ -580,7 +580,7 @@ nav {
 #grillaContacto {
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 15% 10% 67% 8%;
+	grid-template-rows:  10% 3% 82% 5%;
 	height: 2000px;
 	width: 100vw;
 	grid-template-areas:
@@ -626,7 +626,7 @@ nav {
 	display: grid;
 	width: 100vw;
 	grid-template-columns: 100%;
-	grid-template-rows: 15% 10% 67% 8%;
+	grid-template-rows: 10% 3% 82% 5%;
 	grid-template-areas: "header"
 		"nav"
 		"main"
