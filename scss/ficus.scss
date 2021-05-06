@@ -63,8 +63,11 @@ nav {
 	font-size: 0;
 	display: flex;
 	align-items: center;
+	align-content:center;
 	background-color: rgb(229, 209, 208);
 	font-family: "Montserrat", Sans-serif;
+	
+	
 
 	@media (max-width:499px) and (min-width:200px) {
 		justify-content: center;
@@ -75,6 +78,8 @@ nav {
 		font-size: 16px;
 		display: flex;
 		align-items: center;
+		padding-top: 0.9375rem;
+		
 
 		@media (max-width:499px) and (min-width:200px) {
 			display: flex;
@@ -91,6 +96,8 @@ nav {
 			align-items: center;
 			padding: 0.1875em;
 			margin-right: 1.875em;
+			
+			
 
 			&--activo {
 				color: rgb(45, 106, 79);
@@ -98,15 +105,19 @@ nav {
 				font-size: 1em;
 				margin-right: 1em;
 				display: inline;
+				
 
 				ul {
+					display: none;
 					list-style: none;
 					padding: 0;
 				}
+
 			}
 
 			&--activo:hover {
 				ul {
+					display: none;
 					margin: 5px;
 					padding: 0;
 				}
@@ -115,6 +126,7 @@ nav {
 			ul {
 				position: absolute;
 				display: none;
+				
 
 				li.subli {
 					display: block;
@@ -123,6 +135,13 @@ nav {
 					padding-bottom: 5px;
 					font-size: .5em;
 					overflow: auto;
+					
+					
+					a .linkNavegacion{
+						line-height: unset;
+						white-space: nowrap !important;
+						
+					}
 
 				}
 			}
@@ -130,29 +149,42 @@ nav {
 
 		&__li:hover {
 			text-shadow: $colorVerdeagua;
+			white-space: nowrap;
+			
+			
 		}
 	}
 
 	li:hover {
 		ul {
 			display: block;
-			margin-top: 1.25rem;
-			padding-top: 100%;
-			padding-left: 100%;
+			margin-top: 6rem;
+			margin-left: 4em;
+			padding-left:.5em;
+			padding-right: .5em;
+			padding-bottom: .4em;
 			list-style: none;
+			background-color: rgb(229, 209, 208);
+			border-radius: .3em;
+			
 		}
 	}
 
 	.linkNavegacion {
 		text-decoration: none;
-		color: rgb(54, 143, 139);
+		color: rgb(11, 57, 72);
+		padding: .2em;
+	}
+	.linkNavegacion:hover{
+		background-color: rgb(221, 190, 188);
+		border-radius: .3em;
 	}
 
 }
 
 
 
-/*-------------FOOTER--------------------*/
+/*----------------------------FOOTER--------------------------------*/
 .footer {
 	grid-area: footer;
 	display: flex;
