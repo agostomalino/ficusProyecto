@@ -18,57 +18,57 @@
 
 <body>
 
+
+    <header class="cabecera">
+        <img src="css/logoFicus.jpg" alt="logo2" class="cabecera__logo">
+        <h1 class="cabecera__titulo">FICUS CERÁMICA</h1>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li class="menu__li--activo">
+                <a class="linkNavegacion" href="index.html">Inicio</a>
+            </li>
+            <li class="menu__li">
+                <a class="linkNavegacion" href="sobreficus.html">Sobre Ficus</a>
+                <ul>
+                    <li class="subLi"><a class="linkNavegacion" href="sobreficus.html#quienes_somos">Quienes
+                            somos</a>
+                    </li>
+                    <li class="subLi"><a class="linkNavegacion" href="sobreficus.html#concepto">Concepto</a>
+                    </li>
+                    <li class="subLi"><a class="linkNavegacion" href="sobreficus.html#amigos">Amigos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__li">
+                <a class="linkNavegacion" href="talleres.html"> Talleres</a>
+                <ul id="ulTalleres">
+                    <li class="subLi"><a class="linkNavegacion" href="talleres.html#personales">Personales</a>
+                    </li>
+                    <li class="subLi"><a class="linkNavegacion" href="talleres.html#grupales">Grupales</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__li">
+                <a class="linkNavegacion" href="contacto.html">Contacto</a>
+            </li>
+            <li class="menu__li">
+                <a class="linkNavegacion" href="productos.html">Productos</a>
+                <ul>
+                    <li class="subLi"><a class="linkNavegacion" href="productos.html#vajilla">Vajilla</a>
+                    </li>
+                    <li class="subLi"><a class="linkNavegacion" href="productos.html#decoracion_otros">Decoración y
+                            otros</a>
+                    </li>
+                    <li class="subLi"><a class="linkNavegacion" href="productos.html#tabla_precios">Tabla de
+                            precios</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
     <div id="grillaIndex">
-        <header class="cabecera">
-            <img src="css/logoFicus.jpg" alt="logo2" class="cabecera__logo">
-            <h1 class="cabecera__titulo">FICUS CERÁMICA</h1>
-        </header>
-        <nav>
-            <ul class="menu">
-                <li class="menu__li--activo">
-                    <a class="linkNavegacion" href="index.html">Inicio</a>
-                </li>
-                <li class="menu__li">
-                    <a class="linkNavegacion" href="sobreficus.html">Sobre Ficus</a>
-                    <ul>
-                        <li class="subLi"><a class="linkNavegacion" href="sobreficus.html#quienes_somos">Quienes
-                                somos</a>
-                        </li>
-                        <li class="subLi"><a class="linkNavegacion" href="sobreficus.html#concepto">Concepto</a>
-                        </li>
-                        <li class="subLi"><a class="linkNavegacion" href="sobreficus.html#amigos">Amigos</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__li">
-                    <a class="linkNavegacion" href="talleres.html"> Talleres</a>
-                    <ul id="ulTalleres">
-                        <li class="subLi"><a class="linkNavegacion" href="talleres.html#personales">Personales</a>
-                        </li>
-                        <li class="subLi"><a class="linkNavegacion" href="talleres.html#grupales">Grupales</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__li">
-                    <a class="linkNavegacion" href="contacto.html">Contacto</a>
-                </li>
-                <li class="menu__li">
-                    <a class="linkNavegacion" href="productos.html">Productos</a>
-                    <ul>
-                        <li class="subLi"><a class="linkNavegacion" href="productos.html#vajilla">Vajilla</a>
-                        </li>
-                        <li class="subLi"><a class="linkNavegacion" href="productos.html#decoracion_otros">Decoración y
-                                otros</a>
-                        </li>
-                        <li class="subLi"><a class="linkNavegacion" href="productos.html#tabla_precios">Tabla de
-                                precios</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-
         <div class="hola">
             <h3 id="hola__titulo">HOLA!</h3>
             <p class="hola__p">.✿.Bienvenides al mundo Ficus.✿.</p>
@@ -91,8 +91,37 @@
             </div>
         </div>
         <main>
+            <h2 class="animate__animated animate__flipInX">Piezas únicas de cerámica</h2>
             <div id="conetenidoIndex">
-                <h2 class="animate__animated animate__flipInX">Piezas únicas de cerámica</h2>
+                <div class="carouselIndex">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="css/fotosCarousel/slide1.jpg" class="d-block w-100" alt="piezas de ceramica">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="css/fotosCarousel/slide2.jpg" class="d-block w-100" alt="piezas de ceramica">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="css/fotosCarousel/slide3.jpg" class="d-block w-100" alt="piezas de ceramica">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="css/fotosCarousel/slide4.jpg" class="d-block w-100" alt="piezas de ceramica">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
                 <p class="lead">Ahora podes encontrarnos en Nouvel! </p>
                 <a href="https://www.instagram.com/nouvel.design/">NOUVEL DESIGN</a>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatibus hic dolores deleniti
@@ -119,42 +148,7 @@
                         href="https://www.instagram.com/ficusceramica/">IR</a></span></h4>
         </main>
 
-        <aside class="asideIndex">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="css/fotosCarousel/vajilla2 (1).jpg" class="d-block w-100" alt="piezas de ceramica">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="css/fotosCarousel/vajilla3.jpg" class="d-block w-100" alt="piezas de ceramica">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="css/fotosCarousel/vajilla4.jpg" class="d-block w-100" alt="piezas de ceramica">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="css/fotosCarousel/vajillaficus.jpg" class="d-block w-100" alt="piezas de ceramica">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam facilis sequi ipsam dolorem pariatur
-                perferendis voluptatibus repudiandae beatae quod ea iusto eaque adipisci quibusdam explicabo suscipit
-                accusamus optio officiis, corrupti vel! Non reprehenderit sed quas odio impedit sunt voluptatum mollitia
-                rem necessitatibus aperiam voluptates ipsam sequi, rerum natus similique qui, ea doloribus nobis ipsum
-                aliquid esse laboriosam in. Amet, cumque a? Necessitatibus odit doloremque officiis praesentium eveniet
-                commodi. Alias maxime commodi maiores praesentium sapiente dolorum ipsum odio explicabo officia in sunt
-                distinctio, aut dignissimos accusamus qui, tenetur provident doloribus perferendis aliquam ipsam sequi
-                velit ipsa? Eveniet nulla maiores excepturi autem!</p>
-        </aside>
+        
 
         <footer class="footer">
             <ul class="footer__ul">

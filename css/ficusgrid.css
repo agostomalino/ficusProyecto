@@ -159,11 +159,11 @@ nav {
 /*-------------INDEX---------------*/
 #grillaIndex {
   display: grid;
-  height: 2500px;
+  height: auto;
   width: 100vw;
-  grid-template-rows: 10% 3% 10% 72% 5%;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "header header" "nav nav" "hola hola" "main aside" "footer footer"; }
+  grid-template-rows: 8% 92%;
+  grid-template-columns: 100%;
+  grid-template-areas: "hola" "main"; }
   #grillaIndex .hola {
     grid-area: hola;
     background-color: #edafb8;
@@ -186,6 +186,7 @@ nav {
   #grillaIndex main {
     grid-area: main;
     padding: 1em;
+    height: auto;
     background-color: #ffffff;
     font-family: "Montserrat", Sans-serif;
     display: flex;
@@ -215,19 +216,14 @@ nav {
     color: #445b6c;
     padding: .5em;
     text-align: justify; }
-  #grillaIndex aside {
-    grid-area: aside;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+  #grillaIndex .carouselIndex {
     background-color: #ffffff;
     padding: 10px;
-    margin-top: 200px; }
-    #grillaIndex aside #carouselExampleControls {
+    margin: 0; }
+    #grillaIndex .carouselIndex #carouselExampleControls {
       margin: 40px;
       padding-top: 3em; }
-    #grillaIndex aside p {
+    #grillaIndex .carouselIndex p {
       padding: 1em;
       font-family: "Montserrat", Sans-serif;
       font-style: italic;
@@ -411,7 +407,7 @@ nav {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 10% 3% 82% 5%;
-  height: 2000px;
+  height: 1800px;
   width: 100vw;
   grid-template-areas: "header" "nav" "main" "footer"; }
   #grillaContacto #mainContacto {
