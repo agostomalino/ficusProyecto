@@ -130,9 +130,10 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #60c489;
+  background-color: #e5d1d0;
   font-family: "Montserrat", Sans-serif;
-  color: #27292b; }
+  color: #27292b;
+  box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842); }
   .footer__ul {
     padding: .5em;
     padding-top: 1em;
@@ -141,7 +142,7 @@ nav {
     display: flex; }
     .footer__ul li .footerLinks {
       text-decoration: none;
-      color: #ffffff;
+      color: #27292b;
       padding-left: .3em; }
   .footer__amor {
     color: #27292b;
@@ -163,16 +164,6 @@ nav {
       font-size: 10px; } }
 
 /*-------------INDEX---------------*/
-/*#grillaIndex {
-	display: grid;
-	height: auto;
-	width: 100vw;
-	grid-template-rows: 8% 92%;
-	grid-template-columns: 100%;
-	grid-template-areas:
-		"hola"
-		"main";
-*/
 .hola {
   grid-area: hola;
   background-color: rgba(68, 91, 108, 0.1);
@@ -207,10 +198,24 @@ main {
   max-height: 100%;
   font-size: 1em;
   color: #368f8b; }
+  main .animate__animated {
+    padding-left: 9em; }
   main h4 {
     font-weight: lighter;
-    color: #368f8b;
-    font-family: "Montserrat", Sans-serif; }
+    color: #27292b;
+    background-color: rgba(68, 91, 108, 0.1);
+    font-family: "Montserrat", Sans-serif;
+    font-weight: bold;
+    padding: 1em;
+    padding-left: 11em;
+    margin-top: 2em;
+    border-radius: .5em;
+    box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842);
+    display: inline; }
+  main .badge .bg-secondary {
+    background-color: #e5d1d0; }
+  main .botonSeguinos {
+    color: #ffffff; }
   main a {
     text-decoration: none;
     color: #0b3948;

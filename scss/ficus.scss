@@ -8,6 +8,7 @@ $colorFondo: #ffffff;
 $colorTexto: #27292b;
 $colorVerdeagua: #60c489;
 $colorTitulos: rgb(54, 143, 139);
+$colorFondoNav: rgb(229, 209, 208);
 
 
 
@@ -208,9 +209,10 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #60c489;
+	background-color:$colorFondoNav;
 	font-family: "Montserrat", Sans-serif;
 	color: $colorTexto;
+	box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842);
 
 	&__ul {
 		padding: .5em;
@@ -222,7 +224,7 @@ nav {
 
 		li .footerLinks {
 			text-decoration: none;
-			color:$colorFondo;
+			color:$colorTexto;
 			padding-left: .3em;
 		}
 	}
@@ -230,7 +232,7 @@ nav {
 	&__amor {
 		color: $colorTexto;
 		font-family: "Montserrat", Sans-serif;
-		font-size: 0.9375rem;
+		font-size: 0.9375rem; //no se esta aplicando porque se sobre escribe con los h3 de la pagina
 		margin-left: 15px;
 
 		@media (max-width:499px) and (min-width:300px) {
@@ -257,17 +259,6 @@ nav {
 }
 
 /*-------------INDEX---------------*/
-/*#grillaIndex {
-	display: grid;
-	height: auto;
-	width: 100vw;
-	grid-template-rows: 8% 92%;
-	grid-template-columns: 100%;
-	grid-template-areas:
-		"hola"
-		"main";
-*/
-
 	.hola {
 		grid-area: hola;
 		background-color: rgba(68, 91, 108, 0.1);
@@ -314,11 +305,29 @@ nav {
 		
 
 
+		.animate__animated{
+			padding-left: 9em;
+		}
 
 		h4 {
 			font-weight: lighter;
-			color: rgb(54, 143, 139);
+			color: $colorTexto;
+			background-color: rgba(68, 91, 108, 0.1); 
 			font-family: "Montserrat", Sans-serif;
+			font-weight: bold;
+			padding: 1em;
+			padding-left: 11em;
+			margin-top: 2em;
+			border-radius: .5em;
+			box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842);
+			display: inline;
+			
+		}
+		.badge .bg-secondary{
+			background-color: $colorFondoNav;
+		}
+		.botonSeguinos{
+			color: $colorFondo;
 		}
 
 		a {
