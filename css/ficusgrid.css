@@ -27,7 +27,10 @@ body {
     margin-left: 0.625em;
     color: #e5d1d0;
     font-family: "Montserrat", Sans-serif;
-    font-size: 3.125em; }
+    font-size: 3.125em;
+    font-weight: bolder;
+    font-style: initial;
+    letter-spacing: .1em; }
   .cabecera__titulo:hover {
     font-size: 3.75rem;
     transition: 2s; }
@@ -122,23 +125,26 @@ nav {
 
 /*----------------------------FOOTER--------------------------------*/
 .footer {
-  grid-area: footer;
+  max-height: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #60c489;
   font-family: "Montserrat", Sans-serif;
-  color: #445b6c; }
+  color: #27292b; }
   .footer__ul {
     padding: .5em;
+    padding-top: 1em;
     text-decoration: none;
-    list-style: none; }
+    list-style: none;
+    display: flex; }
     .footer__ul li .footerLinks {
       text-decoration: none;
-      color: #ffffff; }
+      color: #ffffff;
+      padding-left: .3em; }
   .footer__amor {
-    color: #445b6c;
+    color: #27292b;
     font-family: "Montserrat", Sans-serif;
     font-size: 0.9375rem;
     margin-left: 15px; }
@@ -157,80 +163,80 @@ nav {
       font-size: 10px; } }
 
 /*-------------INDEX---------------*/
-#grillaIndex {
-  display: grid;
+/*#grillaIndex {
+	display: grid;
+	height: auto;
+	width: 100vw;
+	grid-template-rows: 8% 92%;
+	grid-template-columns: 100%;
+	grid-template-areas:
+		"hola"
+		"main";
+*/
+.hola {
+  grid-area: hola;
+  background-color: rgba(68, 91, 108, 0.1);
+  color: #60c489;
+  font-family: "Montserrat", Sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  padding: 2em;
+  margin-top: 2.5rem; }
+  .hola__titulo {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 1.5625em;
+    font-weight: 1000; }
+  .hola__p {
+    font-size: 1rem;
+    color: #27292b; }
+
+main {
+  padding: 2em;
   height: auto;
-  width: 100vw;
-  grid-template-rows: 8% 92%;
-  grid-template-columns: 100%;
-  grid-template-areas: "hola" "main"; }
-  #grillaIndex .hola {
-    grid-area: hola;
-    background-color: #edafb8;
+  background-color: #ffffff;
+  font-family: "Montserrat", Sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 1em;
+  color: #368f8b; }
+  main h4 {
+    font-weight: lighter;
+    color: #368f8b;
+    font-family: "Montserrat", Sans-serif; }
+  main a {
+    text-decoration: none;
     color: #0b3948;
-    font-family: "Montserrat", Sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 1em; }
+  main p {
     font-size: 1em;
-    padding: 2em;
-    margin-top: 2.5rem; }
-    #grillaIndex .hola__titulo {
-      font-family: "Montserrat", Sans-serif;
-      font-size: 1.5625em;
-      font-weight: bolder; }
-    #grillaIndex .hola__p {
-      font-size: 1rem;
-      color: #368f8b; }
-  #grillaIndex main {
-    grid-area: main;
-    padding: 1em;
-    height: auto;
-    background-color: #ffffff;
-    font-family: "Montserrat", Sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    max-width: 100%;
-    max-height: 100%; }
-    #grillaIndex main h2 {
-      font-size: 3em;
-      color: #368f8b;
-      font-weight: bold;
-      padding: .5em; }
-    #grillaIndex main h4 {
-      font-weight: lighter;
-      color: #368f8b;
-      font-family: "Montserrat", Sans-serif; }
-    #grillaIndex main a {
-      text-decoration: none;
-      color: #0b3948;
-      padding: 1em; }
-    #grillaIndex main a:hover {
-      color: #edafb8; }
-  #grillaIndex p {
-    font-size: 1em;
-    color: #445b6c;
+    color: #27292b;
     padding: .5em;
     text-align: justify; }
-  #grillaIndex .carouselIndex {
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 0; }
-    #grillaIndex .carouselIndex #carouselExampleControls {
-      margin: 40px;
-      padding-top: 3em; }
-    #grillaIndex .carouselIndex p {
-      padding: 1em;
-      font-family: "Montserrat", Sans-serif;
-      font-style: italic;
-      background-color: #edafb8;
-      color: #445b6c;
-      text-align: justify;
-      max-width: 85%; }
+  main .carouselIndex {
+    background-color: #ffffff; }
+    main .carouselIndex #carouselExampleControls {
+      margin: 0px;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+      main .carouselIndex #carouselExampleControls div .d-block {
+        width: auto;
+        max-height: 90vh;
+        object-fit: scale-down; }
+  main p {
+    padding: 1em;
+    font-family: "Montserrat", Sans-serif;
+    font-style: italic;
+    color: #27292b;
+    text-align: justify;
+    max-width: 90%; }
 
 /*--------------SOBRE FICUS-------------------*/
 #grillaSobreFicus {
@@ -245,7 +251,7 @@ nav {
     padding: 1em;
     background-color: #ffffff;
     font-family: "Montserrat", Sans-serif;
-    color: #445b6c;
+    color: #27292b;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -277,7 +283,7 @@ nav {
       padding: .5em; }
     #grillaSobreFicus main p {
       font-size: 1em;
-      color: #445b6c;
+      color: #27292b;
       padding: .5em;
       text-align: justify; }
     #grillaSobreFicus main div div .amigos {
@@ -381,7 +387,7 @@ nav {
   #grillaTalleres p {
     font-family: "Montserrat", Sans-serif;
     font-size: 1em;
-    color: #445b6c;
+    color: #27292b;
     padding: .5em;
     text-align: justify;
     max-width: 80vw; }
@@ -473,7 +479,7 @@ nav {
     #grillaProductos main section p {
       font-family: "Montserrat", Sans-serif;
       font-size: 1em;
-      color: #445b6c;
+      color: #27292b;
       padding: 2em;
       text-align: justify;
       max-width: 80vw; }
@@ -484,7 +490,7 @@ nav {
       padding-top: 1em;
       padding-bottom: 2em;
       padding-left: 3em;
-      color: #445b6c;
+      color: #27292b;
       margin-bottom: 3em;
       max-width: 80vw; }
 

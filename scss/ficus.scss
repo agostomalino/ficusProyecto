@@ -5,7 +5,7 @@ body {
 }
 
 $colorFondo: #ffffff;
-$colorTexto: #445b6c;
+$colorTexto: #27292b;
 $colorVerdeagua: #60c489;
 $colorTitulos: rgb(54, 143, 139);
 
@@ -41,6 +41,9 @@ $colorTitulos: rgb(54, 143, 139);
 		color: rgb(229, 209, 208);
 		font-family: "Montserrat", Sans-serif;
 		font-size: 3.125em;
+		font-weight: bolder;
+		font-style:initial;
+		letter-spacing: .1em;
 
 	}
 
@@ -200,7 +203,7 @@ nav {
 
 /*----------------------------FOOTER--------------------------------*/
 .footer {
-	grid-area: footer;
+	max-height: 5%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -211,12 +214,16 @@ nav {
 
 	&__ul {
 		padding: .5em;
+		padding-top: 1em;
 		text-decoration: none;
 		list-style: none;
+		display: flex;
+
 
 		li .footerLinks {
 			text-decoration: none;
 			color:$colorFondo;
+			padding-left: .3em;
 		}
 	}
 
@@ -250,7 +257,7 @@ nav {
 }
 
 /*-------------INDEX---------------*/
-#grillaIndex {
+/*#grillaIndex {
 	display: grid;
 	height: auto;
 	width: 100vw;
@@ -259,12 +266,12 @@ nav {
 	grid-template-areas:
 		"hola"
 		"main";
-
+*/
 
 	.hola {
 		grid-area: hola;
-		background-color: rgb(237, 175, 184);
-		color: rgb(11, 57, 72);
+		background-color: rgba(68, 91, 108, 0.1);
+		color: $colorVerdeagua;
 		font-family: "Montserrat", Sans-serif;
 		display: flex;
 		flex-direction: column;
@@ -280,18 +287,17 @@ nav {
 		&__titulo {
 			font-family: "Montserrat", Sans-serif;
 			font-size: 1.5625em;
-			font-weight: bolder;
+			font-weight: 1000;
 		}
 
 		&__p {
 			font-size: 1rem;
-			color: rgb(54, 143, 139)
+			color:$colorTexto;
 		}
 	}
 
 	main {
-		grid-area: main;
-		padding: 1em;
+		padding: 2em;
 		height: auto;
 		background-color: $colorFondo;
 		font-family: "Montserrat", Sans-serif;
@@ -302,15 +308,10 @@ nav {
 		flex-wrap: nowrap;
 		max-width: 100%;
 		max-height: 100%;
-
-
-
-		h2 {
-			font-size: 3em;
-			color: $colorTitulos;
-			font-weight: bold;
-			padding: .5em;
-		}
+		font-size: 1em;
+		color: $colorTitulos;
+		
+		
 
 
 
@@ -326,12 +327,6 @@ nav {
 			padding: 1em;
 		}
 
-		a:hover {
-			color: rgb(237, 175, 184);
-
-		}
-	}
-
 	p {
 		font-size: 1em;
 		color: $colorTexto;
@@ -341,29 +336,32 @@ nav {
 
 	.carouselIndex{
 		background-color: $colorFondo;
-		padding: 10px;
-		margin:0;
-	
+		
 		
 
-
-
 		#carouselExampleControls {
-			margin: 40px;
-			padding-top: 3em;
+			margin: 0px;
+			padding-top: 1em;
+			padding-bottom: 1em;
+
+			div .d-block{
+			width: auto;
+			max-height: 90vh;
+			object-fit: scale-down;
+			}
 		}
+	}
 
 		p {
 			padding: 1em;
 			font-family: "Montserrat", Sans-serif;
 			font-style: italic;
-			background-color: rgb(237, 175, 184);
 			color: $colorTexto;
 			text-align: justify;
-			max-width: 85%;
+			max-width: 90%;
 		}
+	
 	}
-}
 
 /*--------------SOBRE FICUS-------------------*/
 
