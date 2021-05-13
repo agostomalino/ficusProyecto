@@ -1,0 +1,131 @@
+/*--------------SOBRE FICUS-------------------*/
+
+		.gridSobreFicus {
+			height: auto;
+			width: 100vw;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
+			background-color: $colorFondo;
+			font-family: "Montserrat", Sans-serif;
+			color: $colorTexto;
+			max-width: 100%;
+			height: auto;
+
+
+					
+			#containerQsomos{
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				justify-items: center;
+				#quienesSomos{
+					margin: .6em auto;
+				}
+				img{
+					margin: .6em auto;
+					max-width: 60vw;
+					height: auto;
+				}
+				p{
+					margin: .6em auto;
+				}
+			}
+
+			#containerConcepto{
+				display: flex;
+				flex-direction: column;
+				margin-left: auto;
+				margin-right: auto;
+				
+				#concepto{
+					margin: .6em auto;
+				}
+				p{
+					margin: .6em auto;
+				}
+
+			}
+
+			#containerAmigos{
+				margin-left: auto;
+				margin-right: auto;
+				display: flex;
+				flex-direction: column;
+
+				.amigosTitulo{
+					margin: .6em auto;
+				}
+				p{
+					margin: .6em auto;
+				}
+
+				/*div .cardsAmigos {*/
+					
+					.cardsAmigos{
+						display: flex;
+						justify-content: center;
+						align-content: center;
+						justify-items: center;
+						margin: .6em auto;
+						height: 40vh;
+						padding-bottom: 2em;
+					
+			
+						@media (max-width:499px) and (min-width:200px) {
+							display: flex;
+							flex-direction: column;
+							height: 50%;
+							justify-items: center;
+						}
+
+
+						.cardItem{
+							width: 40%;
+							height: 80%;
+							background-color: rgba(223, 180, 180, 1);
+							padding: 1em;
+							margin: 1em;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							border-radius: 8%;
+							box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842);
+			
+							@media (max-width:499px) and (min-width:200px) {
+								margin-left: 6.5em;
+							}
+			
+			
+							a {
+								margin: 0;
+								padding: 0;
+								font-size: 0;
+			
+								img {
+			
+									width: 7.5rem;
+									height: 7.5rem;
+									margin: 1em;
+									border-radius: 50%;
+									transition: height 1s width 1s;
+									box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842);
+			
+									&:hover {
+										height: 8.125rem;
+										width: 8.125rem;
+										box-shadow: 5px;
+									}
+								}
+			
+							}
+			
+						}
+				}
+			}
+		
+	
+		
+	
+	}

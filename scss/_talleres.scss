@@ -1,0 +1,84 @@
+/*-------------- TALLERES----------------*/
+@mixin tarjeta ($fondo) {
+	background-color: $fondo;
+	font-weight: bold;
+	font-style: italic;
+	margin: 1em;
+	padding: 1em;
+	padding-bottom: 2em;
+}
+
+
+#grillaTalleres {
+	display: grid;
+	height: 2000px;
+	width: 100vw;
+	grid-template-rows: 10% 3% 82% 5%;
+	grid-template-columns: 100%;
+	grid-template-areas:
+		"header"
+		"nav"
+		"main"
+		"footer";
+
+	@media (max-width:499px) and (min-width:200px) {
+		height: auto;
+		font-size: 10px;
+	}
+
+
+	#mainTalleres {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 100%;
+		grid-template-areas:
+			"personales grupales";
+		align-items: flex-start;
+		justify-items: center;
+		padding: 1em;
+		background-color: $colorFondo;
+		font-family: "Montserrat", Sans-serif;
+
+		@media (max-width:499px) and (min-width:200px) {
+			display: flex;
+			flex-direction: column;
+		}
+
+	}
+
+	h2 {
+		font-size: 3em;
+		color: $colorTitulos;
+		font-weight: bold;
+		padding: .5em;
+
+	}
+
+	#tituloTaller{
+		font-size: 3em;
+		color: $colorTitulos;
+		font-weight: bold;
+		padding: .5em;
+
+	}
+
+	p {
+		font-family: "Montserrat", Sans-serif;
+		font-size: 1em;
+		color: $colorTexto;
+		padding: .5em;
+		text-align: justify;
+		max-width: 80vw;
+	}
+
+	#tPersonales {
+		grid-area: personales;
+		@include tarjeta(rgb(243, 208, 206));
+	}
+
+	#tGrupales {
+		grid-area: grupales;
+		@include tarjeta (rgb(231, 189, 187));
+	}
+
+}
