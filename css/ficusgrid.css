@@ -206,6 +206,9 @@ main #containerCards {
               height: 8.125rem;
               width: 8.125rem;
               box-shadow: 5px; }
+        .gridSobreFicus #containerAmigos .cardsAmigos .cardItem p {
+          font-weight: bold;
+          color: #ffffff; }
 
 /*-------------- TALLERES----------------*/
 #grillaTalleres {
@@ -269,14 +272,9 @@ main #containerCards {
 
 /*------------CONTACTO-----------------*/
 #grillaContacto {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 10% 3% 82% 5%;
-  height: 1800px;
-  width: 100vw;
-  grid-template-areas: "header" "nav" "main" "footer"; }
+  height: auto;
+  width: 100vw; }
   #grillaContacto #mainContacto {
-    grid-area: main;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -284,7 +282,7 @@ main #containerCards {
     background-color: #ffffff;
     font-family: "Montserrat", Sans-serif; }
     #grillaContacto #mainContacto form {
-      color: #368f8b;
+      color: #27292b;
       background-color: #f3d0ce;
       padding: 1.25rem;
       border-radius: 8%;
