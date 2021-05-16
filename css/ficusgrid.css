@@ -296,60 +296,87 @@ main #containerCards {
             margin: .5em; } }
 
 /*------------PRODUCTOS-----------------*/
-#grillaProductos {
-  display: grid;
+#gridProductos {
   width: 100vw;
-  grid-template-columns: 100%;
-  grid-template-rows: 10% 3% 82% 5%;
-  grid-template-areas: "header" "nav" "main" "footer"; }
-  #grillaProductos main {
-    grid-area: main;
-    background-color: #ffffff;
-    font-family: "Montserrat", Sans-serif;
-    overflow: auto; }
-    @media (max-width: 499px) and (min-width: 200px) {
-      #grillaProductos main {
-        font-size: 10px; } }
-    #grillaProductos main h2 {
-      font-size: 3em;
-      color: #d4aaa8;
-      font-weight: bold;
-      padding: .5em; }
-    #grillaProductos main h3 {
-      font-size: 3em;
-      color: #d4aaa8;
-      font-weight: bold;
-      padding: .5em; }
-    #grillaProductos main .conteiner-fluid {
-      max-width: 100vw;
-      margin: 1em;
-      padding: 1em;
-      align-content: center; }
-      #grillaProductos main .conteiner-fluid div .row div .col-12 col-md-6 col-sm-4 {
-        padding: 1em; }
-        @media (max-width: 499px) and (min-width: 200px) {
-          #grillaProductos main .conteiner-fluid div .row div .col-12 col-md-6 col-sm-4 img {
-            max-width: 80%; } }
-      #grillaProductos main .conteiner-fluid img {
-        max-height: 80vh;
-        padding: 1em; }
-    #grillaProductos main section p {
-      font-family: "Montserrat", Sans-serif;
-      font-size: 1em;
-      color: #27292b;
-      padding: 2em;
-      text-align: justify;
-      max-width: 80vw; }
-    #grillaProductos main div #sectionTabla {
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      padding-top: 1em;
-      padding-bottom: 2em;
-      padding-left: 3em;
-      color: #27292b;
-      margin-bottom: 3em;
-      max-width: 80vw; }
+  height: auto;
+  max-width: 100%;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Montserrat", Sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 4% 17% 17% 4% 17% 17% 4% 20%;
+  grid-template-areas: "titulo titulo titulo titulo" "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 ." "titulo2 titulo2 titulo2 titulo2" "foto1b foto2b foto3b foto4b" "foto5b foto6b foto7b foto8b" "titulo3 titulo3 titulo3 titulo3" "tabla tabla tabla tabla";
+  grid-gap: .5em; }
+  #gridProductos #vajilla {
+    grid-area: titulo; }
+  #gridProductos .foto1 {
+    grid-area: foto1; }
+    #gridProductos .foto1 img {
+      max-width: 100%; }
+  #gridProductos .foto2 {
+    grid-area: foto2; }
+    #gridProductos .foto2 img {
+      max-width: 100%; }
+  #gridProductos .foto3 {
+    grid-area: foto3; }
+    #gridProductos .foto3 img {
+      max-width: 100%; }
+  #gridProductos .foto4 {
+    grid-area: foto4; }
+    #gridProductos .foto4 img {
+      max-width: 100%; }
+  #gridProductos .foto5 {
+    grid-area: foto5; }
+    #gridProductos .foto5 img {
+      max-width: 100%; }
+  #gridProductos .foto6 {
+    grid-area: foto6; }
+    #gridProductos .foto6 img {
+      max-width: 100%; }
+  #gridProductos .foto7 {
+    grid-area: foto7; }
+    #gridProductos .foto7 img {
+      max-width: 20%; }
+  #gridProductos #decoracion_otros {
+    grid-area: titulo2; }
+  #gridProductos .img1bis {
+    grid-area: foto1b; }
+    #gridProductos .img1bis img {
+      max-width: 100%; }
+  #gridProductos .img2bis {
+    grid-area: foto2b; }
+    #gridProductos .img2bis img {
+      max-width: 100%; }
+  #gridProductos .img3bis {
+    grid-area: foto3b; }
+    #gridProductos .img3bis img {
+      max-width: 100%; }
+  #gridProductos .img4bis {
+    grid-area: foto4b; }
+    #gridProductos .img4bis img {
+      max-width: 100%; }
+  #gridProductos .img5bis {
+    grid-area: foto5b; }
+    #gridProductos .img5bis img {
+      max-width: 100%; }
+  #gridProductos .img6bis {
+    grid-area: foto6b; }
+    #gridProductos .img6bis img {
+      max-width: 100%; }
+  #gridProductos .img7bis {
+    grid-area: foto7b; }
+    #gridProductos .img7bis img {
+      max-width: 100%; }
+  #gridProductos .img8bis {
+    grid-area: foto8b; }
+    #gridProductos .img8bis img {
+      max-width: 100%; }
+  #gridProductos #tabla_precios {
+    grid-area: titulo3; }
+  #gridProductos #tablaProductos {
+    grid-area: tabla;
+    max-width: 100vw; }
 
 @media (max-width: 800px) and (min-width: 500px) {
   #grillaIndex {
