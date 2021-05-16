@@ -2,7 +2,7 @@
 #gridProductos {
 	width: 100vw;
 	height: auto;
-	max-width:100%;
+	max-width:100vw;
 	padding: 0;
 	background-color: $colorFondo;
 	font-family: "Montserrat", Sans-serif;
@@ -12,13 +12,13 @@
 	grid-template-areas: 
 						"titulo titulo titulo titulo"
 						"foto1 foto2 foto3 foto4"
-						"foto5 foto6 foto7 ."
+						"foto5 foto6 foto7 foto8"
 						"titulo2 titulo2 titulo2 titulo2"
 						"foto1b foto2b foto3b foto4b"
 						"foto5b foto6b foto7b foto8b"
 						"titulo3 titulo3 titulo3 titulo3"
 						"tabla tabla tabla tabla";
-	grid-gap: .5em;
+	grid-gap: .2em;
 	
 
 
@@ -28,53 +28,77 @@
 			}
 			.foto1{
 				grid-area:foto1;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
 			.foto2{
 				
 				grid-area: foto2;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
 			.foto3{
 				
 				grid-area: foto3;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 			.foto4{
 			
 				grid-area: foto4;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 			.foto5{
 			
 				grid-area: foto5;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 			.foto6{
 			
 				grid-area: foto6;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
 			.foto7{
 			
 				grid-area: foto7;
+				padding: .5em;
 				img{
-					max-width: 20%;
+					max-width: 95%;
+					object-fit: cover;
+				}
+			}
+
+			.foto8{
+			
+				grid-area: foto8;
+				padding: .5em;
+				img{
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
@@ -87,63 +111,79 @@
 			.img1bis{
 				
 				grid-area: foto1b;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 			
 			.img2bis{
 				
 				grid-area: foto2b;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
 			.img3bis{
 			
 				grid-area: foto3b;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
 			.img4bis{
 			
 				grid-area: foto4b;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
 			.img5bis{
 			
 				grid-area: foto5b;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
 			.img6bis{
 				grid-area: foto6b;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
 			.img7bis{
 			
 				grid-area: foto7b;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
 			.img8bis{
 						
 				grid-area: foto8b;
+				padding: .5em;
 				img{
-					max-width: 100%;
+					max-width: 95%;
+					object-fit: cover;
 				}
 			}
 
@@ -154,8 +194,39 @@
 
 			#tablaProductos{
 				grid-area: tabla;
-				max-width: 100vw;
+				max-width: 90vw;
+				padding: .5em;
+				margin: .6em auto;
+				color: $colorTexto;
+				background-color: $colorTitulos;
+				border-radius: 8%;
 			}
 
 	}
-
+/*
+#gridProductos{
+	@media (max-width:800px) and (min-width:500px) {
+		width: 99vw;
+		height: auto;
+		max-width:100vw;
+		padding: 0;
+		background-color: $colorFondo;
+		font-family: "Montserrat", Sans-serif;
+		display: grid;
+		grid-template-columns: 33.3% 33.3% 33.3%;
+		grid-template-rows:	3% 12% 12% 12% 3% 12% 12% 12% 3% 19%;
+		grid-template-areas: 
+							"titulo titulo titulo"
+							"foto1 foto2 foto3"
+							"foto4 foto5 foto6"
+							"foto7 foto8 ."
+							"titulo2 titulo2 titulo2"
+							"foto1b foto2b foto3b"
+							"foto4 foto5b foto6b"
+							"foto7b foto8b ."
+							"titulo3 titulo3 titulo3"
+							"tabla tabla tabla";
+		grid-gap: .2em;
+		
+	}
+}*/
