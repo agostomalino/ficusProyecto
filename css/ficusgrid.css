@@ -211,64 +211,89 @@ main #containerCards {
           color: #ffffff; }
 
 /*-------------- TALLERES----------------*/
-#grillaTalleres {
+#gridTalleres {
   display: grid;
-  height: 2000px;
-  width: 100vw;
-  grid-template-rows: 10% 3% 82% 5%;
-  grid-template-columns: 100%;
-  grid-template-areas: "header" "nav" "main" "footer"; }
-  @media (max-width: 499px) and (min-width: 200px) {
-    #grillaTalleres {
-      height: auto;
-      font-size: 10px; } }
-  #grillaTalleres #mainTalleres {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: "personales grupales";
-    align-items: flex-start;
-    justify-items: center;
-    padding: 1em;
-    background-color: #ffffff;
-    font-family: "Montserrat", Sans-serif; }
-    @media (max-width: 499px) and (min-width: 200px) {
-      #grillaTalleres #mainTalleres {
-        display: flex;
-        flex-direction: column; } }
-  #grillaTalleres h2 {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "personales grupales";
+  align-items: flex-start;
+  justify-items: center;
+  padding: 1em;
+  background-color: #ffffff;
+  font-family: "Montserrat", Sans-serif; }
+  #gridTalleres #tituloTaller {
     font-size: 3em;
     color: #d4aaa8;
     font-weight: bold;
     padding: .5em; }
-  #grillaTalleres #tituloTaller {
-    font-size: 3em;
-    color: #d4aaa8;
-    font-weight: bold;
-    padding: .5em; }
-  #grillaTalleres p {
+  #gridTalleres p {
     font-family: "Montserrat", Sans-serif;
     font-size: 1em;
     color: #27292b;
     padding: .5em;
     text-align: justify;
     max-width: 80vw; }
-  #grillaTalleres #tPersonales {
+  #gridTalleres #tPersonales {
     grid-area: personales;
     background-color: #f3d0ce;
     font-weight: bold;
     font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     margin: 1em;
     padding: 1em;
-    padding-bottom: 2em; }
-  #grillaTalleres #tGrupales {
+    padding-bottom: 2em;
+    border-radius: .8em; }
+    #gridTalleres #tPersonales img {
+      max-width: 80%;
+      margin: .8em 2em;
+      border-radius: .8em; }
+    #gridTalleres #tPersonales h2 {
+      font-size: 3em;
+      color: #ffffff;
+      font-weight: bold;
+      padding: .5em;
+      margin: 0; }
+    #gridTalleres #tPersonales .containerCardt {
+      width: 80%;
+      height: auto;
+      padding: .5em;
+      background-color: #cdc7be;
+      border-radius: .8em;
+      display: flex;
+      align-items: center; }
+      #gridTalleres #tPersonales .containerCardt h6 {
+        font-size: 1em;
+        font-weight: bolder;
+        color: #ffffff; }
+      #gridTalleres #tPersonales .containerCardt a {
+        text-align: center; }
+      #gridTalleres #tPersonales .containerCardt a:hover {
+        color: #ffffff; }
+  #gridTalleres #tGrupales {
     grid-area: grupales;
     background-color: #e7bdbb;
     font-weight: bold;
     font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     margin: 1em;
     padding: 1em;
-    padding-bottom: 2em; }
+    padding-bottom: 2em;
+    border-radius: .8em; }
+    #gridTalleres #tGrupales img {
+      max-width: 80%;
+      margin: .6em auto;
+      border-radius: .8em; }
+    #gridTalleres #tGrupales h3 {
+      color: #ffffff;
+      margin: 0; }
 
 /*------------CONTACTO-----------------*/
 #grillaContacto {
@@ -419,33 +444,6 @@ main #containerCards {
     background-color: #d4aaa8;
     border-radius: 8%; }
 
-/*
-#gridProductos{
-	@media (max-width:800px) and (min-width:500px) {
-		width: 99vw;
-		height: auto;
-		max-width:100vw;
-		padding: 0;
-		background-color: $colorFondo;
-		font-family: "Montserrat", Sans-serif;
-		display: grid;
-		grid-template-columns: 33.3% 33.3% 33.3%;
-		grid-template-rows:	3% 12% 12% 12% 3% 12% 12% 12% 3% 19%;
-		grid-template-areas: 
-							"titulo titulo titulo"
-							"foto1 foto2 foto3"
-							"foto4 foto5 foto6"
-							"foto7 foto8 ."
-							"titulo2 titulo2 titulo2"
-							"foto1b foto2b foto3b"
-							"foto4 foto5b foto6b"
-							"foto7b foto8b ."
-							"titulo3 titulo3 titulo3"
-							"tabla tabla tabla";
-		grid-gap: .2em;
-		
-	}
-}*/
 @media (max-width: 800px) and (min-width: 500px) {
   #grillaIndex {
     display: grid;
@@ -530,28 +528,46 @@ main #containerCards {
       margin: .3em; } }
 
 @media (max-width: 800px) and (min-width: 500px) {
-  #grillaTalleres {
+  #gridTalleres {
     display: grid;
-    height: auto;
-    width: 100vw;
-    overflow: auto;
-    grid-template-columns: 100vw;
-    grid-template-rows: 8% 5% 82% 5%;
-    grid-template-areas: "header" "nav" "main" "footer"; } }
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "personales grupales";
+    align-items: flex-start;
+    justify-items: center;
+    padding: 1em;
+    background-color: #ffffff;
+    font-family: "Montserrat", Sans-serif; } }
 
-@media (max-width: 499px) and (min-width: 200px) {
-  #grillaTalleres {
+@media (min-width: 200px) and (max-width: 499px) {
+  #gridTalleres {
     display: grid;
     height: auto;
     width: 100vw;
     overflow: auto;
-    grid-template-columns: 100vw;
-    grid-template-rows: 7% 8% 80% 5%;
-    grid-template-areas: "header" "nav" "main" "footer"; }
-    #grillaTalleres .cabecera .cabecera__logo {
+    grid-template-rows: 55% 45%;
+    grid-template-columns: 100%;
+    grid-template-areas: "personales" "grupales";
+    padding: 0;
+    font-size: 16px; }
+    #gridTalleres #tPersonales {
+      grid-area: personales; }
+      #gridTalleres #tPersonales p {
+        font-size: 1em; }
+      #gridTalleres #tPersonales h2 {
+        font-size: 2em;
+        margin: 0; }
+    #gridTalleres #tGrupales {
+      grid-area: grupales; }
+      #gridTalleres #tGrupales p {
+        font-size: 1em; }
+      #gridTalleres #tGrupales h3 {
+        font-size: 2em;
+        margin: 0; }
+    #gridTalleres .cabecera .cabecera__logo {
       max-height: 70%; }
-    #grillaTalleres .cabecera .cabecera__titulo {
-      font-size: 3em;
+    #gridTalleres .cabecera .cabecera__titulo {
+      font-size: 1em;
       margin: .3em; } }
 
 @media (max-width: 800px) and (min-width: 500px) {
@@ -580,64 +596,43 @@ main #containerCards {
       font-size: 3em;
       margin: .3em; } }
 
-#gridProductos {
-  /*@media (max-width:800px) and (min-width:500px) {
-			width: 100vw;
-			height: auto;
-			max-width:100vw;
-			padding: 0;
-			background-color: $colorFondo;
-			font-family: "Montserrat", Sans-serif;
-			display: grid;
-			grid-template-columns: 33.3% 33.3% 33.3%;
-			grid-template-rows:	3% 12% 12% 12% 3% 12% 12% 12% 3% 19%;
-			grid-template-areas: 
-								"titulo titulo titulo"
-								"foto1 foto2 foto3"
-								" foto4 foto5 foto6"
-								" foto7 foto8 ."
-								"titulo2 titulo2 titulo2"
-								"foto1b foto2b foto3b"
-								"foto4 foto5b foto6b"
-								" foto7b foto8b ."
-								"titulo3 titulo3 titulo3"
-								"tabla tabla tabla";
-			grid-gap: .2em;
-			
-		}
-		@media (max-width:499px) and (min-width:200px) {
-			display: grid;
-			height: auto;
-			width: 100vw;
-			overflow: auto;
-			grid-template-columns: 100vw;
-			grid-template-rows: 7% 8% 80% 5%;
-			grid-template-areas:
-				"header"
-				"nav"
-				"main"
-				"footer";
-	
-			.cabecera{
-					.cabecera__logo{
-						max-height: 70%;
-					}
-					.cabecera__titulo{
-						font-size: 3em;
-						margin: .3em;
-					}
-			}
-	} */ }
+@media (max-width: 800px) and (min-width: 500px) {
+  #gridProductos {
+    width: 99vw;
+    height: auto;
+    max-width: 100vw;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "titulo titulo titulo" "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 ." "titulo2 titulo2 titulo2" "foto1b foto2b foto3b" "foto4b foto5b foto6b" "foto7b foto8b ." "titulo3 titulo3 titulo3" "tabla tabla tabla";
+    grid-gap: .2em; } }
+
+@media (max-width: 499px) and (min-width: 200px) {
+  #gridProductos {
+    width: 99vw;
+    height: auto;
+    max-width: 100vw;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "titulo titulo" "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8" "titulo2 titulo2" "foto1b foto2b" "foto3b foto4b" "foto5b foto6b" "foto7b foto8b" "titulo3 titulo3" "tabla tabla";
+    grid-gap: .2em;
+    overflow: auto; } }
 
 body {
   margin: 0;
   padding: 0; }
 
-h2, h3 {
-  font-size: 2.5em;
-  color: #d4aaa8;
-  font-weight: bolder; }
-
+/*h2,h3{
+	font-size: 2.5em;
+	color: $colorTitulos;
+	font-weight: bolder;
+	
+}*/
 /*----------------ENCABEZADO-------------------*/
 .cabecera {
   margin: 0;
@@ -735,7 +730,7 @@ nav {
             line-height: unset;
             white-space: nowrap !important; }
     nav .menu__li:hover {
-      text-shadow: #60c489;
+      text-shadow: #cdc7be;
       white-space: nowrap;
       border-radius: .3em; }
   nav li:hover ul {

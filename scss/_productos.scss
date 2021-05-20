@@ -1,25 +1,26 @@
 /*------------PRODUCTOS-----------------*/
-#gridProductos {
-	width: 100vw;
-	height: auto;
-	max-width:100vw;
-	padding: 0;
-	background-color: $colorFondo;
-	font-family: "Montserrat", Sans-serif;
-	display: grid;
-	grid-template-columns: repeat(4, 25%);
-	grid-template-rows:	4% 17% 17% 4% 17% 17% 4% 20%;
-	grid-template-areas: 
-						"titulo titulo titulo titulo"
-						"foto1 foto2 foto3 foto4"
-						"foto5 foto6 foto7 foto8"
-						"titulo2 titulo2 titulo2 titulo2"
-						"foto1b foto2b foto3b foto4b"
-						"foto5b foto6b foto7b foto8b"
-						"titulo3 titulo3 titulo3 titulo3"
-						"tabla tabla tabla tabla";
-	grid-gap: .2em;
-	
+
+	#gridProductos {
+		width: 100vw;
+		height: auto;
+		max-width:100vw;
+		padding: 0;
+		background-color: $colorFondo;
+		font-family: "Montserrat", Sans-serif;
+		display: grid;
+		grid-template-columns: repeat(4, 25%);
+		grid-template-rows:	4% 17% 17% 4% 17% 17% 4% 20%;
+		grid-template-areas: 
+							"titulo titulo titulo titulo"
+							"foto1 foto2 foto3 foto4"
+							"foto5 foto6 foto7 foto8"
+							"titulo2 titulo2 titulo2 titulo2"
+							"foto1b foto2b foto3b foto4b"
+							"foto5b foto6b foto7b foto8b"
+							"titulo3 titulo3 titulo3 titulo3"
+							"tabla tabla tabla tabla";
+		grid-gap: .2em;
+		
 
 
 		
@@ -203,30 +204,5 @@
 			}
 
 	}
-/*
-#gridProductos{
-	@media (max-width:800px) and (min-width:500px) {
-		width: 99vw;
-		height: auto;
-		max-width:100vw;
-		padding: 0;
-		background-color: $colorFondo;
-		font-family: "Montserrat", Sans-serif;
-		display: grid;
-		grid-template-columns: 33.3% 33.3% 33.3%;
-		grid-template-rows:	3% 12% 12% 12% 3% 12% 12% 12% 3% 19%;
-		grid-template-areas: 
-							"titulo titulo titulo"
-							"foto1 foto2 foto3"
-							"foto4 foto5 foto6"
-							"foto7 foto8 ."
-							"titulo2 titulo2 titulo2"
-							"foto1b foto2b foto3b"
-							"foto4 foto5b foto6b"
-							"foto7b foto8b ."
-							"titulo3 titulo3 titulo3"
-							"tabla tabla tabla";
-		grid-gap: .2em;
-		
-	}
-}*/
+
+

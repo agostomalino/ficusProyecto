@@ -1,33 +1,25 @@
 /*-------------- TALLERES----------------*/
+$colorbb:#cdc7be;
+$colorTexto: #27292b;
+$colorFondo: #ffffff;
+
 @mixin tarjeta ($fondo) {
 	background-color: $fondo;
 	font-weight: bold;
 	font-style: italic;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 	margin: 1em;
 	padding: 1em;
 	padding-bottom: 2em;
+	border-radius: .8em;
 }
 
 
-#grillaTalleres {
-	display: grid;
-	height: 2000px;
-	width: 100vw;
-	grid-template-rows: 10% 3% 82% 5%;
-	grid-template-columns: 100%;
-	grid-template-areas:
-		"header"
-		"nav"
-		"main"
-		"footer";
-
-	@media (max-width:499px) and (min-width:200px) {
-		height: auto;
-		font-size: 10px;
-	}
-
-
-	#mainTalleres {
+#gridTalleres {
 		display: grid;
 		grid-template-columns: 50% 50%;
 		grid-template-rows: 100%;
@@ -39,20 +31,7 @@
 		background-color: $colorFondo;
 		font-family: "Montserrat", Sans-serif;
 
-		@media (max-width:499px) and (min-width:200px) {
-			display: flex;
-			flex-direction: column;
-		}
-
-	}
-
-	h2 {
-		font-size: 3em;
-		color: $colorTitulos;
-		font-weight: bold;
-		padding: .5em;
-
-	}
+		
 
 	#tituloTaller{
 		font-size: 3em;
@@ -74,11 +53,59 @@
 	#tPersonales {
 		grid-area: personales;
 		@include tarjeta(rgb(243, 208, 206));
+		
+		img{
+			max-width: 80%;
+			margin: .8em 2em;
+			border-radius: .8em;
+		}
+		h2{
+			font-size: 3em;
+			color: $colorFondo;
+			font-weight: bold;
+			padding: .5em;
+			margin: 0;
+	
+		}
+	
+		.containerCardt{
+		width: 80%;
+		height: auto;
+		padding: .5em;
+		background-color:$colorbb;
+		border-radius: .8em;
+		display: flex;
+		align-items: center;
+		h6{
+			font-size: 1em;
+			font-weight: bolder;
+			color: $colorFondo;
+		}
+		a{
+			text-align: center;
+		}
+		a:hover{
+			color: $colorFondo;
+		}
+		
+	} 
 	}
 
 	#tGrupales {
 		grid-area: grupales;
 		@include tarjeta (rgb(231, 189, 187));
+		img{
+			max-width: 80%;	
+			margin: .6em auto;
+			border-radius: .8em;
+		}
+		h3{
+			color: $colorFondo;
+			margin: 0;
+		}
 	}
 
-}
+
+	}
+
+
