@@ -114,7 +114,13 @@ main #containerCards {
     main #containerCards .cardProductos img {
       width: 90%;
       height: auto;
-      margin-top: 2em; }
+      margin-top: 0em;
+      margin-left: .5em; }
+    main #containerCards .cardProductos .pipavelaImg {
+      width: 90%;
+      height: auto;
+      margin-top: -1.6em;
+      margin-left: .5em; }
   main #containerCards .cardProductos:hover {
     transform: translateY(-3%); }
 
@@ -296,29 +302,25 @@ main #containerCards {
       margin: 0; }
 
 /*------------CONTACTO-----------------*/
-#grillaContacto {
+#mainContacto {
   height: auto;
-  width: 100vw; }
-  #grillaContacto #mainContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    font-family: "Montserrat", Sans-serif; }
-    #grillaContacto #mainContacto form {
-      color: #27292b;
-      background-color: #f3d0ce;
-      padding: 1.25rem;
-      border-radius: 8%;
-      box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842); }
-      @media (max-width: 499px) and (min-width: 200px) {
-        #grillaContacto #mainContacto form {
-          font-size: 10px;
-          margin: 3em; }
-          #grillaContacto #mainContacto form #formularioContacto div .form-group {
-            font-size: 1em;
-            margin: .5em; } }
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  font-family: "Montserrat", Sans-serif; }
+  #mainContacto #formularioContacto {
+    color: #27292b;
+    width: 50%;
+    background-color: #f3d0ce;
+    padding: 1.25rem;
+    border-radius: 8%;
+    box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842); }
+    #mainContacto #formularioContacto #comentario {
+      width: 90%;
+      margin-left: 1.6em; }
 
 /*------------PRODUCTOS-----------------*/
 #gridProductos {
@@ -442,54 +444,50 @@ main #containerCards {
     margin: .6em auto;
     color: #27292b;
     background-color: #d4aaa8;
-    border-radius: 8%; }
+    border-radius: .8em;
+    box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842); }
 
 @media (max-width: 800px) and (min-width: 500px) {
   #grillaIndex {
+    /*display: grid;
+		height: auto;
+		width: 100vw;
+		overflow: auto;
+		grid-template-columns: 100vw;
+		grid-template-rows: 25% 50% 25%;
+		grid-template-areas:
+			"hola"
+			"main"
+			"aside";
+
+		.cabecera {
+			font-size: 16px;
+		}
+
+		.asideIndex {
+			margin-top: 1em;
+		} */ } }
+
+@media (max-width: 499px) and (min-width: 200px) {
+  #grillaIndex {
+    /*font-size: 10px;
+		margin: 1em;*/
     display: grid;
     height: auto;
     width: 100vw;
     overflow: auto;
     grid-template-columns: 100vw;
-    grid-template-rows: 8% 5% 5% 50% 47% 5%;
-    grid-template-areas: "header" "nav" "hola" "main" "aside" "footer"; }
-    #grillaIndex .cabecera {
-      font-size: 16px; }
-    #grillaIndex .asideIndex {
-      margin-top: 1em; } }
-  @media (max-width: 800px) and (min-width: 500px) and (max-width: 499px) and (min-width: 300px) {
-    #grillaIndex {
-      font-size: 10px;
-      margin: 1em; } }
-
-@media (max-width: 499px) and (min-width: 200px) {
-  #grillaIndex {
-    display: grid;
-    height: auto;
-    width: 100vw;
-    overflow: auto;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 7% 8% 5% 38% 37% 5%;
-    grid-template-areas: "header header" "nav nav" "hola hola" "main main" "aside aside" "footer footer"; }
+    grid-template-rows: 20% 55% 25%;
+    grid-template-areas: "hola" "main" "aside"; }
     #grillaIndex .cabecera .cabecera__logo {
       max-height: 70%; }
     #grillaIndex .cabecera .cabecera__titulo {
       font-size: 3em; }
-    #grillaIndex nav {
-      grid-area: nav;
-      list-style: none;
-      font-size: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #e5d1d0;
-      font-family: "Montserrat", Sans-serif; }
-      #grillaIndex nav .menu {
-        list-style: none;
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
+    #grillaIndex .cabecera #containerCards {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: ""; }
     #grillaIndex .hola {
       padding: 0; }
       #grillaIndex .hola #hola__titulo {
@@ -500,7 +498,7 @@ main #containerCards {
         font-size: .9em;
         padding: 0; }
     #grillaIndex main {
-      font-size: 10px; } }
+      font-size: 13px; } }
 
 @media (max-width: 800px) and (min-width: 500px) {
   #grillaSobreFicus {
@@ -571,30 +569,32 @@ main #containerCards {
       margin: .3em; } }
 
 @media (max-width: 800px) and (min-width: 500px) {
-  #grillaContacto {
-    display: grid;
+  #mainContacto {
     height: auto;
     width: 100vw;
     overflow: auto;
-    grid-template-columns: 100vw;
-    grid-template-rows: 8% 5% 82% 5%;
-    grid-template-areas: "header" "nav" "main" "footer"; } }
+    width: auto;
+    font-size: 15px; }
+    #mainContacto #formularioContacto {
+      width: 90%;
+      border-radius: 5%; }
+      #mainContacto #formularioContacto #comentario {
+        width: 95%;
+        margin: 0; } }
 
 @media (max-width: 499px) and (min-width: 200px) {
-  #grillaContacto {
-    display: grid;
+  #mainContacto {
     height: auto;
     width: 100vw;
     overflow: auto;
-    grid-template-columns: 100vw;
-    grid-template-rows: 13% 15% 59% 13%;
-    grid-template-areas: "header" "nav" "main" "footer";
-    font-size: 10px; }
-    #grillaContacto .cabecera .cabecera__logo {
-      max-height: 70%; }
-    #grillaContacto .cabecera .cabecera__titulo {
-      font-size: 3em;
-      margin: .3em; } }
+    font-size: 16px; }
+    #mainContacto #formularioContacto {
+      width: 99%;
+      border-radius: 3%;
+      font-size: .8em; }
+      #mainContacto #formularioContacto #comentario {
+        width: 95%;
+        margin: 0; } }
 
 @media (max-width: 800px) and (min-width: 500px) {
   #gridProductos {
@@ -622,6 +622,22 @@ main #containerCards {
     grid-template-areas: "titulo titulo" "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8" "titulo2 titulo2" "foto1b foto2b" "foto3b foto4b" "foto5b foto6b" "foto7b foto8b" "titulo3 titulo3" "tabla tabla";
     grid-gap: .2em;
     overflow: auto; } }
+
+@media (max-width: 499px) and (min-width: 200px) {
+  nav {
+    list-style: none;
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5d1d0;
+    font-family: "Montserrat", Sans-serif; }
+    nav .menu {
+      list-style: none;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 body {
   margin: 0;

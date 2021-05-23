@@ -1,11 +1,8 @@
 /*------------CONTACTO-----------------*/
 
-#grillaContacto {
-	height: auto;
-	width: 100vw;
-
 	#mainContacto {
-
+		height: auto;
+		width: 100vw;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -13,26 +10,18 @@
 		background-color: $colorFondo;
 		font-family: "Montserrat", Sans-serif;
 
-		form {
+		#formularioContacto{
 			color: $colorTexto;
+			width: 50%;
 			background-color: rgb(243, 208, 206);
 			padding: 1.25rem;
 			border-radius: round($number: 8%);
 			box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842);
 
-			@media (max-width:499px) and (min-width:200px) {
-				font-size: 10px;
-				margin: 3em;
-
-				#formularioContacto div .form-group {
-					font-size: 1em;
-					margin: .5em;
-
-
-
-				}
+			#comentario{
+				width: 90%;
+				margin-left: 1.6em;
 			}
-
-		}
+		
 	}
 }
