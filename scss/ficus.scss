@@ -74,7 +74,26 @@ $colorbb:#cdc7be;
 }
 
 /*-----------BARRA DE NAVEGACION--------------*/
-nav {
+.navbar{
+	font-family: "Montserrat", Sans-serif;
+	background-color: rgb(229, 209, 208);
+	box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842);
+	color: $colorTexto;
+
+	.navbar-collapse{
+
+		ul li .nav-link{
+			color:$colorTexto;
+		}
+}
+
+.dropdown-menu[data-bs-popper]{
+	background-color: rgb(229, 209, 208);
+	color: #27292b;
+}
+	
+}
+/*nav {
 	grid-area: nav;
 	list-style: none;
 	font-size: 0;
@@ -212,7 +231,7 @@ nav {
 	}
 
 }
-
+*/
 
 
 /*----------------------------FOOTER--------------------------------*/
@@ -242,7 +261,7 @@ nav {
 		}
 	}
 
-	&__amor {
+	footer &__amor {
 		color: $colorTexto;
 		font-family: "Montserrat", Sans-serif;
 		font-size: 0.9375rem; //no se esta aplicando porque se sobre escribe con los h3 de la pagina
