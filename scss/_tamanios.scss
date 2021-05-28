@@ -1,3 +1,17 @@
+//--------------Header-------------------------//
+@media (max-width:800px) and (min-width:500px) {
+	.cabecera{
+		min-height: 100px;}
+
+}
+
+@media (max-width:499px) and (min-width:200px) {
+	.cabecera{
+		height: 50vh;
+		min-height: 50px;
+	}
+}
+
 //-----------MEDIA QUERY INDEX------------------//
 #grillaIndex {
 	@media (max-width:800px) and (min-width:500px) {
@@ -290,6 +304,8 @@
 	}
 }
 
+/*
+ESTILO DEL NAV DE CSS AHORA BOOTSTRAP
 
 @media (max-width:499px) and (min-width:200px) {
 	nav {
@@ -311,4 +327,4 @@
 		}
 	}
 
-}
+}*/
