@@ -199,9 +199,20 @@
 				padding: .5em;
 				margin: .6em auto;
 				color: $colorTexto;
-				background-color: $colorTitulos;
+				background-color: rgba(68, 91, 108, 0.1);
 				border-radius: .8em;
 				box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842);
+				font-size: 13px;
+				td{
+					padding: 0;
+					padding-left: .5em;
+				
+					.ulTabla{
+						list-style: none;
+						margin: 0;
+						padding: 0;
+					}
+				}
 			}
 
 	}

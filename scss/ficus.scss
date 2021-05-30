@@ -3,7 +3,7 @@
 @import '_talleres.scss';
 @import '_contacto.scss';
 @import '_productos.scss';
-@import '_tamanios.scss';
+
 
 body {
 	margin: 0;
@@ -35,16 +35,11 @@ $colorbb:#cdc7be;
 	align-items: center;
 	justify-content: flex-start;
 	background-image: url(../css/fotosCarousel/slide4.jpg);
-	height: 100vh;
-	min-height: 600px;
+	height: 50vh;
+	min-height: 200px;
 	background-position: center center;
 	background-size: cover;
 
-	@media (max-width:499px) and (min-width:200px) {
-		display: flex;
-		flex-direction: column;
-		font-size: 10px;
-	}
 
 	header &__logo {
 		max-width: 40%;
@@ -55,24 +50,27 @@ $colorbb:#cdc7be;
 
 	a {
 		text-decoration: none;
-	}
-
-	header &__titulo {
-		margin-left: 0.625em;
-		color: $colorTexto;
-		-webkit-text-stroke: 2px rgba(103, 160, 157, 0.74);
+		color:$colorFondoNav;
 		font-family: "Montserrat", Sans-serif;
-		font-size: 3.125em;
 		font-weight: bolder;
-		font-style: initial;
-		letter-spacing: .1em;
-
 	}
+	&__titulo{
+		-webkit-text-stroke: 2px rgb(54, 96, 99);
+		color: $colorFondoNav;
+		font-size: 3.5em;
+		padding-left: 1em;
+		letter-spacing: .3em;
+		text-align: center;
+		
+	}
+
 
 	&__titulo:hover {
 		color: $colorFondoNav;
 		font-size: 4em;
 		transition: 2s;
+		text-align: center;
+		padding: 0;
 	}
 
 
@@ -114,31 +112,42 @@ $colorbb:#cdc7be;
 	color: $colorTexto;
 	box-shadow: 0 2px 5px 1px rgba(172, 161, 163, 0.842);
 
-	img {
-		border-radius: 50%;
-		max-height: 5em;
-		margin: .8em;
-	}
-
-	&__ul {
-		padding: .5em;
-		text-decoration: none;
-		list-style: none;
-		margin: 0;
-
-
-		li .footerLinks {
-			text-decoration: none;
-			color: $colorTexto;
-			padding-left: .3em;
-
+	.flexFoot{
+		display: flex;
+		align-items: center;
+		
+		
+		&__logo {
+			border-radius: 50%;
+			max-height: 5em;
+			margin: .8em;
 		}
+
+		&__ul {
+			padding: .5em;
+			text-decoration: none;
+			list-style: none;
+			margin: 0;
+	
+	
+			li .footerLinks {
+				text-decoration: none;
+				color: $colorTexto;
+				padding-left: .3em;
+				
+	
+			}
+		}
+
 	}
+	
+
+
 	
 	footer &__amor {
 		color: $colorTexto;
 		font-family: "Montserrat", Sans-serif;
-		font-size: 0.9375em!important;
+		font-size: 13px !important;
 		margin-left: 15px;
 
 	}
@@ -148,14 +157,14 @@ $colorbb:#cdc7be;
 		font-weight: bolder;
 		font-style: oblique;
 
-		@media (max-width:499px) and (min-width:300px) {
-			font-size: 15px;
-
-		}
 	}
 
-	@media (max-width:499px) and (min-width:300px) {
-		font-size: 10px;
-
+	p{
+		font-size: 13px;
+		text-align: center;
 	}
+
 }
+
+// hoja de estilos con media queries
+@import '_tamanios.scss';

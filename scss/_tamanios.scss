@@ -1,151 +1,224 @@
 //--------------Header-------------------------//
 @media (max-width:800px) and (min-width:500px) {
-	.cabecera{
-		min-height: 100px;}
+	.cabecera {
+		min-height: 50px;
+		display: flex;
+		flex-direction: column;
+
+		&__titulo {
+			text-align: center;
+			padding: 0;
+			color: $colorFondoNav;
+		}
+
+		&__titulo:hover {
+			font-size: 3.8em;
+			transition: 2s;
+			padding: 0;
+			margin: 0;
+		}
+	}
 
 }
 
 @media (max-width:499px) and (min-width:200px) {
-	.cabecera{
+	.cabecera {
 		height: 50vh;
-		min-height: 50px;
+		min-height: 90px;
+		display: flex;
+		flex-direction: column;
+		font-size: 10px;
+
+		&__titulo {
+
+			font-size: 2.5em;
+			letter-spacing: .3em;
+			text-align: center;
+			padding: 0;
+			color: $colorFondoNav;
+		}
+
+		&__titulo:hover {
+			color: $colorFondoNav;
+			font-size: 3em;
+			transition: 2s;
+			text-align: center;
+			padding: 0;
+		}
+
 	}
 }
 
-//-----------MEDIA QUERY INDEX------------------//
-#grillaIndex {
-	@media (max-width:800px) and (min-width:500px) {
 
-		/*display: grid;
-		height: auto;
-		width: 100vw;
-		overflow: auto;
-		grid-template-columns: 100vw;
-		grid-template-rows: 25% 50% 25%;
-		grid-template-areas:
-			"hola"
-			"main"
-			"aside";
+/*----------------------------FOOTER--------------------------------*/
+.footer {
+	font-size: 13px;
 
-		.cabecera {
-			font-size: 16px;
+	img {
+		border-radius: 50%;
+		max-height: 5em;
+		margin: .8em;
+	}
+
+	&__ul {
+		padding: .5em;
+		text-decoration: none;
+		list-style: none;
+		margin: 0;
+
+
+		li .footerLinks {
+			text-decoration: none;
+			color: $colorTexto;
+			padding-left: .3em;
+
 		}
-
-		.asideIndex {
-			margin-top: 1em;
-		} */
-
-
+	}
+	
+	footer &__amor {
+		color: $colorTexto;
+		font-family: "Montserrat", Sans-serif;
+		font-size: 0.9375em!important;
+		margin-left: 15px;
 
 	}
 
-	@media (max-width:499px) and (min-width:200px) {
+	&__amor--modifier:hover {
+		color: $colorTitulos;
+		font-weight: bolder;
+		font-style: oblique;
 
-		/*font-size: 10px;
-		margin: 1em;*/
+		@media (max-width:499px) and (min-width:300px) {
+			font-size: 15px;
 
-		display: grid;
-		height: auto;
-		width: 100vw;
-		overflow: auto;
-		grid-template-columns: 100vw;
-		grid-template-rows: 20% 55% 25%;
-		grid-template-areas:
-			"hola"
-			"main"
-			"aside";
-
-		.cabecera {
-			.cabecera__logo {
-				max-height: 70%;
-			}
-
-			.cabecera__titulo {
-				font-size: 3em;
-			}
-			#containerCards{
-				display: grid;
-				grid-template-columns: 100%;
-				grid-template-rows: 50% 50%;
-				grid-template-areas: "";
-			}
-			
 		}
+	}
+
+	@media (max-width:499px) and (min-width:300px) {
+		font-size: 10px;
+
+	}
+}
 
 
-		
+//-----------MEDIA QUERY INDEX------------------//
 
+@media (max-width:800px) and (min-width:500px) {
+	#mainIndex {
+		#containerCards{
+			display: flex;
+			flex-direction: column;
+
+			.cardProductos {
+				display: flex;
+				flex-direction: row;
+				padding-left: 1em;
+				align-items: center;
+				figure{
+					width: 38%;
+					margin: 2em;
+					
+				img{
+					width:100%;
+				}
+				}
+			}
+		}
+	}
+
+}
+
+	@media (max-width:499px) and (min-width:200px) {
 		.hola {
 			padding: 0;
-
+	
 			#hola__titulo {
 				font-size: 1em;
 				padding: 10px 0px 0px 0px;
 				margin: 0;
 			}
-
+	
 			.hola__p {
 				font-size: .9em;
 				padding: 0;
 			}
 		}
+	
+		#mainIndex {
 
-		main {
-			font-size: 13px;
-		}
+			#containerCards{
+				display: flex;
+				flex-direction: column;
+				padding: 0;
+				margin: 0;
+	
+				.cardProductos {
+					display: flex;
+					flex-direction: row;
+					padding-left: 1em;
+					align-items: center;
+					margin: 0;
+					margin-bottom: 1em;
+					figure{
+						width: 100%;
+						
+					img{
+						width:100%;
+						margin: 0;
+					}
+
+					.pipavelaImg{
+						margin: 0;
+					}
+					}
+				}
+			}
+			h2,h3,h4{
+				text-align: center;
+			}	
+
 	}
 
-
-
 }
+
+
+
+
 
 //*---------------MEDIAQ SOBREFICUS---------------------*//
-#grillaSobreFicus {
-	@media (max-width:800px) and (min-width:500px) {
 
-		display: grid;
+@media (min-width:200px) and (max-width:499px) {
+	.sobreFicus{
 		height: auto;
-		width: 100vw;
-		overflow: auto;
-		grid-template-columns: 100vw;
-		grid-template-rows: 8% 5% 82% 5%;
-		grid-template-areas:
-			"header"
-			"nav"
-			"main"
-			"footer";
-	}
 
-	@media (max-width:499px) and (min-width:200px) {
-		display: grid;
-		height: auto;
-		width: 100vw;
-		overflow: auto;
-		grid-template-columns: 100vw;
-		grid-template-rows: 7% 8% 80% 5%;
-		grid-template-areas:
-			"header"
-			"nav"
-			"main"
-			"footer";
+		#containerAmigos{
+			max-width: 100vw;
+			height: auto;
 
-		.cabecera {
-			.cabecera__logo {
-				max-height: 70%;
+			p{
+				max-width: 100vw;
+				margin: .6em auto;
 			}
 
-			.cabecera__titulo {
-				font-size: 3em;
-				margin: .3em;
+		div.cardsAmigos{
+			display: flex;
+			flex-direction: column;
+			height: auto;
+			justify-items: center;
+		
+			.cardItem{
+				display: flex;
+				margin-left: 6.5em;
 			}
 		}
-	}
+	
 }
-
+}
+}
 //-----------------MEDIAQ TALLERES---------------------------//
 
-	@media (max-width:800px) and (min-width:500px) {
-		#gridTalleres {
+@media (max-width:800px) and (min-width:500px) {
+	#gridTalleres {
 		display: grid;
 		grid-template-columns: 50% 50%;
 		grid-template-rows: 100%;
@@ -156,53 +229,50 @@
 		padding: 1em;
 		background-color: $colorFondo;
 		font-family: "Montserrat", Sans-serif;
-		}
 	}
+}
 
-	@media (min-width:200px) and (max-width:499px)   {
-		#gridTalleres {
-			display: grid;
-			height: auto;
-			width: 100vw;
-			overflow: auto;
-			grid-template-rows: 55% 45%;
-			grid-template-columns: 100%;
-			grid-template-areas: "personales"
-				"grupales";
-			padding: 0;
-			font-size: 16px;
-			
-			#tPersonales{
-				grid-area: personales;
-				
-				p{font-size: 1em;}
-				
-				h2{ font-size: 2em;
-					margin: 0;
-				}
+@media (min-width:200px) and (max-width:499px) {
+	#gridTalleres {
+		display: grid;
+		height: auto;
+		width: 100vw;
+		overflow: auto;
+		grid-template-rows: 55% 45%;
+		grid-template-columns: 100%;
+		grid-template-areas: "personales"
+			"grupales";
+		padding: 0;
+		font-size: 16px;
+
+		#tPersonales {
+			grid-area: personales;
+
+			p {
+				font-size: 1em;
 			}
 
-			#tGrupales{
-				grid-area: grupales;
-
-				p{font-size: 1em;}
-				
-				h3{ font-size: 2em;
-					margin: 0;
-				}
-			}
-			.cabecera {
-				.cabecera__logo {
-					max-height: 70%;
-				}
-
-				.cabecera__titulo {
-					font-size: 1em;
-					margin: .3em;
-				}
+			h2 {
+				font-size: 2em;
+				margin: 0;
 			}
 		}
+
+		#tGrupales {
+			grid-area: grupales;
+
+			p {
+				font-size: 1em;
+			}
+
+			h3 {
+				font-size: 2em;
+				margin: 0;
+			}
+		}
+
 	}
+}
 
 
 //-------------------MEDIAQ CONTACTO :)----------------------------//
@@ -215,11 +285,11 @@
 		width: auto;
 		font-size: 15px;
 
-		#formularioContacto{
-			width:90%;
+		#formularioContacto {
+			width: 90%;
 			border-radius: 5%;
 
-			#comentario{
+			#comentario {
 				width: 95%;
 				margin: 0;
 			}
@@ -235,18 +305,18 @@
 		overflow: auto;
 		font-size: 16px;
 
-		#formularioContacto{
-			width:99%;
+		#formularioContacto {
+			width: 99%;
 			border-radius: 3%;
 			font-size: .8em;
 
-			#comentario{
+			#comentario {
 				width: 95%;
 				margin: 0;
 			}
 		}
 	}
-} 
+}
 
 //-------------MEDIAQ PRODUCTOS :)---------------------------//
 @media (max-width:800px) and (min-width:500px) {
@@ -303,28 +373,3 @@
 
 	}
 }
-
-/*
-ESTILO DEL NAV DE CSS AHORA BOOTSTRAP
-
-@media (max-width:499px) and (min-width:200px) {
-	nav {
-		list-style: none;
-		font-size: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-color: rgb(229, 209, 208);
-		font-family: "Montserrat", Sans-serif;
-
-		.menu {
-			list-style: none;
-			font-size: 1rem;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-
-		}
-	}
-
-}*/
